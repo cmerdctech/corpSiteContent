@@ -1,0 +1,10 @@
+.DS_Store
+
+/application/configs/*
+/library/Credentials/*
+
+/tmp/*
+
+public/media/hash/*
+
+Icon?
