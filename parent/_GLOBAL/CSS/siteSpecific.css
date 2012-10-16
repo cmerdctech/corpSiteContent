@@ -1,5 +1,27 @@
 body{
 background:white;
+font-family: 'Open Sans', sans-serif;
+}
+
+.headerblock{
+	height:70px;width:1000px;margin:0px 0px 0px 0px;
+	text-align:left;
+}
+
+.headerblock .logo{
+font-size:24pt;margin:10px 0px 0px 30px;float:left;
+}
+
+.headerblock .fullname{
+margin:63px 0px 0px 35px;clear:both;color:#666;
+}
+
+.headerblock .tagLine{
+	font-family: 'Satisfy', cursive;
+	font-size:18pt;
+	margin:-28px 100px 0px 30px;
+	float:right;color:#666;
+	height:0px; /*for some reason this block rides at the bottom of the enclosing div, I set this so it doesn't hang out.*/
 }
 
 .navBlock{
@@ -8,7 +30,7 @@ width:1000px;background:#f2f2f2;height:50px;margin:0px 0px 20px 0px;
 
 .navMenus{
 width:860px;
-padding-top:20px;
+padding-top:13px;
 margin:0px 70px 20px 70px;
 }
 
@@ -70,9 +92,11 @@ width:1000px;text-align:center;font-size:10pt;margin-top:25px;border-top:1pt sol
 	color: #2a7fff;
 	margin:100px;
 	overflow:hidden;
+	text-align:left;
 }
 
 .panelFirstLine{
+font-family: 'Open Sans Condensed', sans-serif;
 font-weight:bold;
 margin-bottom:30px;
 font-size:18pt;
@@ -92,4 +116,13 @@ font-style:italic;
 margin-bottom:30px;
 margin-top:30px;
 font-size:18pt;
+}
+
+.anythingSlider-default.activeSlider .anythingControls a{
+background:#f2f2f2 !important;
+color:#ccc !important;
+}
+.anythingSlider-default.activeSlider .anythingWindow {
+	border-color: white !important;
+	border-bottom:2pt solid #f2f2f2 !important;
 }
