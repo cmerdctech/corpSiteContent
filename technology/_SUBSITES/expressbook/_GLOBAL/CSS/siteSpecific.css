@@ -1,1 +1,160 @@
-.filesInThisDirectoryAreAppliedToYourPages{a:red;}
+body{
+background:white;
+font-family: 'Open Sans', sans-serif;
+}
+
+.headerblock{
+	height:70px;width:1000px;margin:0px 0px 0px 0px;
+	text-align:left;
+}
+
+.headerblock .logo{
+font-size:24pt;margin:10px 0px 0px 30px;color:#2a7fff;
+width:500px;
+}
+
+.headerblock .fullname{
+margin:0px 0px 0px 32px;clear:both;color:#666;
+width:500px;
+}
+
+.headerblock .tagLine{
+	font-family: 'Satisfy', cursive;
+	font-size:18pt;
+	margin:-28px 0px 0px 0px;
+	float:right;color:#666;
+	height:0px; /*for some reason this block rides at the bottom of the enclosing div, I set this so it doesn't hang out.*/
+	width:415px; /*this moves the left justified tagline horizontally*/
+}
+
+.navBlock{
+width:1000px;background:#f2f2f2;height:50px;margin:0px 0px 20px 0px;
+}
+
+.navMenus{
+width:860px;
+padding-top:13px;
+margin:0px 70px 20px 70px;
+}
+
+.footerContainer{
+margin-top:20px;background:#f2f2f2;width:1000px;min-height:200px;padding-top:20px;
+}
+
+.footerSiteDrectoryBlock{
+clear:both;overflow:hidden;
+}
+
+.footerSiteDrectoryBlock .sitemapBlock{
+float:left;margin-left:20px;margin-right:20px;color:black;font-size:10pt;margin-top:20px;
+}
+
+
+.footerSiteDrectoryBlock .sitemapBlock .sitemapTitle{
+font-weight:bold;border-bottom:1pt solid gray;margin-bottom:5px;
+color:#2a7fff;
+}
+
+.sitemapContainer{
+}
+
+.sitemapItem{
+font-weight:bold;margin-bottom:5px;
+color:#ccc;
+}
+
+.sitemapItem a{
+font-weight:bold;margin-bottom:5px;
+color:#ccc;
+}
+
+.sitemapItem a:hover{
+font-weight:bold;margin-bottom:5px;
+color:#666;
+}
+
+.footerContactBlock{
+clear:both;
+background:#ccc;
+}
+
+.contactFooterContent{
+color:#666;
+width:1000px;text-align:center;font-size:10pt;margin-top:25px;border-top:1pt solid gray;padding-bottom:10px;padding-top:10px;margin-top:10px;
+}
+
+.mainContentContainer{
+
+}
+
+.panelBlock{
+	width:900px;
+	height:500px;
+	font-size:14pt;
+	color:red;
+	color: #2a7fff;
+	overflow:hidden;
+	text-align:left;
+	background:#f2f2f2;
+}
+
+.panelFirstLine{
+font-family: 'Open Sans Condensed', sans-serif;
+font-weight:bold;
+margin-bottom:30px;
+font-size:18pt;
+}
+
+.panelWisecrackBlock{
+width:700px;
+}
+
+.panelWisecrack{
+margin-left:50px;
+}
+
+.panelLastLine{
+font-weight:bold;
+font-style:italic;
+margin-bottom:30px;
+margin-top:30px;
+font-size:18pt;
+}
+
+.anythingSlider-default.activeSlider .anythingControls a{
+	background:#f2f2f2 !important;
+	color:#ccc !important;
+}
+.anythingSlider-default.activeSlider .anythingWindow {
+	border-color: white !important;
+	border-bottom:2pt solid #f2f2f2 !important;
+}
+
+
+/*NAVIGATION BAR STYLES =========================================*/
+
+ul.dropdown a:hover{
+	color: #000;
+}
+ul.dropdown a:active{
+	color: #ffa500;
+}
+ul.dropdown li a
+{
+	border-right: 1px solid #333;
+	color:#2a7fff;
+}
+ul.dropdown li:hover{
+	background: #F3D673;
+	color: #2a7fff;
+}
+ul.dropdown li.hover a{
+	color: black;
+}
+
+/*refers to subsequent levels of popup, if present*/
+ul.dropdown ul li{
+	background: #f6f6f6;
+	color: #000;
+}
+

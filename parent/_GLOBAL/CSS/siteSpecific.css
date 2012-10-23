@@ -9,19 +9,22 @@ font-family: 'Open Sans', sans-serif;
 }
 
 .headerblock .logo{
-font-size:24pt;margin:10px 0px 0px 30px;float:left;
+font-size:24pt;margin:10px 0px 0px 30px;color:#2a7fff;
+width:500px;
 }
 
 .headerblock .fullname{
-margin:63px 0px 0px 35px;clear:both;color:#666;
+margin:0px 0px 0px 32px;clear:both;color:#666;
+width:500px;
 }
 
 .headerblock .tagLine{
 	font-family: 'Satisfy', cursive;
 	font-size:18pt;
-	margin:-28px 100px 0px 30px;
+	margin:-28px 0px 0px 0px;
 	float:right;color:#666;
 	height:0px; /*for some reason this block rides at the bottom of the enclosing div, I set this so it doesn't hang out.*/
+	width:415px; /*this moves the left justified tagline horizontally*/
 }
 
 .navBlock{
@@ -80,19 +83,19 @@ color:#666;
 width:1000px;text-align:center;font-size:10pt;margin-top:25px;border-top:1pt solid gray;padding-bottom:10px;padding-top:10px;margin-top:10px;
 }
 
-.multiPanelContainer{
+.mainContentContainer{
 
 }
 
 .panelBlock{
-	width:800px;
+	width:900px;
 	height:500px;
 	font-size:14pt;
 	color:red;
 	color: #2a7fff;
-	margin:100px;
 	overflow:hidden;
 	text-align:left;
+	background:#f2f2f2;
 }
 
 .panelFirstLine{
@@ -119,10 +122,39 @@ font-size:18pt;
 }
 
 .anythingSlider-default.activeSlider .anythingControls a{
-background:#f2f2f2 !important;
-color:#ccc !important;
+	background:#f2f2f2 !important;
+	color:#ccc !important;
 }
 .anythingSlider-default.activeSlider .anythingWindow {
 	border-color: white !important;
 	border-bottom:2pt solid #f2f2f2 !important;
 }
+
+
+/*NAVIGATION BAR STYLES =========================================*/
+
+ul.dropdown a:hover{
+	color: #000;
+}
+ul.dropdown a:active{
+	color: #ffa500;
+}
+ul.dropdown li a
+{
+	border-right: 1px solid #333;
+	color:#2a7fff;
+}
+ul.dropdown li:hover{
+	background: #F3D673;
+	color: #2a7fff;
+}
+ul.dropdown li.hover a{
+	color: black;
+}
+
+/*refers to subsequent levels of popup, if present*/
+ul.dropdown ul li{
+	background: #f6f6f6;
+	color: #000;
+}
+
