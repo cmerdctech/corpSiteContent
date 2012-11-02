@@ -1,0 +1,173 @@
+<style>
+
+.completionContainer{
+height:510px;
+width:750px;
+position:relative;
+}
+
+.completionSummary{
+border:1pt solid gray;
+margin:30px 0px 20px 0px;
+width:550px;
+height:160px;
+}
+
+.completionSuccessMsg{
+    color: green;
+    font-size: 14pt;
+    margin: 10px 0 10px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.completionClickInstruction{
+font-weight:bold;
+font-size:14pt;
+margin:40px 0px 0px 0px;
+}
+
+.completionButtonHolder{
+
+margin:20px 0px 20px 0px;
+}
+
+.completionInstructions{
+font-size:10pt;
+width:400px;
+margin:40px 0px 20px 0px;
+}
+
+.completionTokenDisplay{
+font-size:14pt;
+font-weight:bold;
+}
+.completionTokenCopy{
+padding:5px;
+font-weight:normal;
+width:350px;
+color:#777
+}
+.completionfinalNote{
+font-size:10pt;
+margin:20px 0px 20px 0px;
+}
+
+.updateButton{
+	display:block;
+  	font-weight:bold;
+	border-top:1pt solid gray;
+	cursor:pointer;
+	border-left:1pt solid gray;
+	border-right:1pt solid black;
+	border-bottom:1pt solid black;
+	text-align:center;
+	padding-left:2px;
+	padding-right:2px;
+	padding-top:8px;
+	width:80px;
+	height:22px;
+	margin-right:10px;
+	margin-top:10px;
+  -moz-border-radius: 4px; /* Firefox */
+  -webkit-border-radius: 4px; /* Safari, Chrome */
+  border-radius: 4px; /* CSS3 */
+	-webkit-box-shadow:2px 3px 5px rgba(0, 0, 0, .5);
+	   -moz-box-shadow:2px 3px 5px rgba(0, 0, 0, .5);
+	        box-shadow:2px 3px 5px rgba(0, 0, 0, .5);
+}
+
+.updateButtonReady{
+	background:#D2E6D2;
+	color:black;
+  -moz-border-radius: 4px; /* Firefox */
+  -webkit-border-radius: 4px; /* Safari, Chrome */
+  border-radius: 4px; /* CSS3 */
+}
+
+.updateButton:hover{
+	background:none;
+	color:red;
+  -moz-border-radius: 4px; /* Firefox */
+  -webkit-border-radius: 4px; /* Safari, Chrome */
+  border-radius: 4px; /* CSS3 */
+}
+
+
+.completionInfo{
+margin:0px 0px 0px 30px;
+}
+.completionIdentityInfo{
+float:left;
+padding:0px 20px 0px 20px;
+}
+
+.completionIdentityInfo td{
+padding:1px 5px 1px 5px;
+}
+
+.completionDivider{
+border-left:1pt solid gray;
+margin-left:5px;
+padding-right:5px;
+float:left;
+height:100px;
+width:5px;
+}
+
+.completionPurchaseInfo{
+float:left;
+padding:0px 20px 0px 20px;
+}
+
+.completionPurchaseInfo td{
+padding:1px 5px 1px 5px;
+}
+</style>
+<div class='completionContainer'>
+
+<%==prodServerMessage%>
+<div class='completionSummary'>
+<div class='completionSuccessMsg'>Your payment completed successfully!</div>
+<div class='completionInfo'>
+<table class='completionIdentityInfo'>
+<tr><td>Charged to:</td><td><%=cardData.name%></td></tr>
+<tr><td>Email:</td><td><%=cardData.emailAdr%></td></tr>
+<tr><td>Phone:</td><td><%=cardData.phoneNumber%></td></tr>
+<tr><td>Card Name:</td><td><%=cardData.cardName%></td></tr>
+<tr><td>Card Ending:</td><td>**** **** **** <%=cardData.cardNumber%></td></tr>
+<tr><td>PO/Memo:</td><td><%=cardData.poNumber%></td></tr>
+</table>
+
+<div class='completionDivider'></div>
+
+<table class='completionPurchaseInfo'>
+<%==prodString%>
+</table>
+
+
+</div>
+</div>
+<div class='completionClickInstruction'>
+Click this button to update your TRAX account with these new purchases.
+</div>
+
+<div class='completionButtonHolder'>
+<a href='http://assessment.tensigma.org?token=<%=orderId%>' class='updateButton updateButtonReady'>UPDATE</a>
+</div>
+
+
+<div class='completionInstructions'>
+You can also use a bookmark to go to your TRAX account page. There, you can choose 'Add Surveys' and Copy/Paste this purchase token into the field marked 'Purchase Token'.
+
+</div>
+
+<div class='completionTokenDisplay'>
+Your purchase token is: <input class='completionTokenCopy' type='text' value='<%=orderId%>'>
+</div>
+
+<div class='completionfinalNote'>
+This information, plus a receipt, is being emailed to you but it's a good idea to print this page.
+</div>
+
+</div>
