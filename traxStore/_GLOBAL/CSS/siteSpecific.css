@@ -337,4 +337,13 @@ padding-left:15px;
 #copyright{
 font-size:8pt;
 margin-bottom:4px;
+text-align:center;
+}
+
+.legalism{
+color:gray;
+}
+
+.legalism:hover{
+color:blue;
 }
