@@ -159,34 +159,3 @@ ul.dropdown ul li{
 	color: #000;
 }
 
-
-/*TAB PANEL CONTROLS =========================================*/
-
-#panelList{
-border:4pt solid #e6e3e3;
-	border-radius: 10px 10px 0 0;
-	-moz-border-radius: 10px 10px 0 0;
-	-webkit-border-radius: 10px 10px 0 0;
-}
-.sliderTopControls{
-padding-left:0px;
-}
-
-.sliderTopControls li{
-	display:inline;
-	margin:0px 3px 0px 3px;
-	padding:0px 20px 0px 20px;
-	background: #e6e3e3;
-	border-radius: 10px 10px 0 0;
-	-moz-border-radius: 10px 10px 0 0;
-	-webkit-border-radius: 10px 10px 0 0;
-}
-
-.tabControlGuts{
-	padding:10px 0px 10px 0px;
-}
-.sliderTopControls a {
-	/* top shadow */
-	color: #2a7fff;
-}
-
