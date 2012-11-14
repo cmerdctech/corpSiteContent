@@ -187,6 +187,7 @@ padding-left:20px;
 
 .listFeature{
 	margin-left:15px;
+	margin-bottom:5px;
 	list-style-type: disc;
 }
 
@@ -220,5 +221,15 @@ width:450px;
 font-weight:bold;
 }
 .benefit .description{
+font-style:italic;
+}
+
+.quotation{
+margin:20px 0px 0px 10px;
+font-size:10pt;
+width:400px;
+}
+
+.quotation .attribution{
 font-style:italic;
 }
