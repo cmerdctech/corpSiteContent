@@ -184,3 +184,12 @@ padding-left:10px;
 color:blue;
 padding-left:20px;
 }
+
+.listFeature{
+	margin-left:15px;
+	list-style-type: disc;
+}
+
+.listFeature:before{
+content:"• ";
+}
