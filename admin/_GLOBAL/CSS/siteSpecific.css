@@ -193,3 +193,32 @@ padding-left:20px;
 .listFeature:before{
 content:"• ";
 }
+
+.quote{
+color:#297FFF;
+}
+
+.attribution{
+color:#777;
+font-weight:normal;
+font-style:italic;
+}
+
+.detailHeadline{
+font-weight:bold;
+font-size:110%;
+}
+
+.benefit{
+margin-top:10px;
+margin-left:20px;
+font-size:10pt;
+width:450px;
+}
+
+.benefit .title{
+font-weight:bold;
+}
+.benefit .description{
+font-style:italic;
+}
