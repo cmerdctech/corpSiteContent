@@ -150,6 +150,7 @@ padding:10px;
 }
 .panelHeadline{
 font-size:180%;
+margin-bottom:10px;
 }
 
 .subHead{
@@ -168,7 +169,12 @@ width:450px;
 .supportLink{
 position:absolute;
 bottom:0px;
-left:10px;
+left:40px;
+padding-bottom:10px;
+font-size:8pt;
+width:530px;
+border-top:1pt solid #f2f2f2;
+padding-top:10px;
 }
 
 .learnMore{
@@ -232,4 +238,9 @@ width:400px;
 
 .quotation .attribution{
 font-style:italic;
+}
+
+.hRule{
+margin-top:10px;
+border-top:1pt solid #f2f2f2;
 }
