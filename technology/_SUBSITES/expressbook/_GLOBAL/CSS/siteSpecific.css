@@ -158,6 +158,15 @@ ul.dropdown li.hover a{
 font-size:10pt;
 }
 
+.ebPanelContent{
+font-size:10pt;
+position:relative;
+}
+
+.ebLearnMore{
+font-weight:bold;
+}
+
 /*refers to subsequent levels of popup, if present*/
 ul.dropdown ul li{
 	background: #f6f6f6;
