@@ -1,3 +1,7 @@
+.anythingSlider-default .anythingControls {
+    outline: 0 none;
+}
+
 body{
 background:white;
 font-family: 'Open Sans', sans-serif;
