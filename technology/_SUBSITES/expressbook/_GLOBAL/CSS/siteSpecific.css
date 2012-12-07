@@ -152,6 +152,12 @@ ul.dropdown li.hover a{
 	color: black;
 }
 
+
+
+.ebFeaturePara{
+font-size:10pt;
+}
+
 /*refers to subsequent levels of popup, if present*/
 ul.dropdown ul li{
 	background: #f6f6f6;
