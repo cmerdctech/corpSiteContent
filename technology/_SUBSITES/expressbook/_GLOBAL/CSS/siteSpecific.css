@@ -153,18 +153,46 @@ ul.dropdown li.hover a{
 }
 
 
+.ebPanelContent{
+font-size:10pt;
+position:relative;
+padding:20px;
+}
+
+.ebPanelContent p{
+width:500px;
+}
+
+.ebLearnMore a{
+
+}
+
+.ebLearnMore a:hover{
+font-weight:normal;
+}
+
+.ebPanelHeadline{
+color:#2a7fff;
+font-weight:bold;
+font-size:12pt;
+}
+
+.ebPanelSubtitle{
+color:#2a7fff;
+font-weight:normal;
+font-style:italic;
+font-size:10pt;
+margin-top:10px;
+width:500px;
+}
 
 .ebFeaturePara{
 font-size:10pt;
 }
 
-.ebPanelContent{
-font-size:10pt;
-position:relative;
-}
-
 .ebLearnMore{
 font-weight:bold;
+margin-left:40px;
 }
 
 /*refers to subsequent levels of popup, if present*/
