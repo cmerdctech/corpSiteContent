@@ -1,7 +1,11 @@
 .DS_Store
+._.DS_Store
 
 /application/configs/*
 /library/Credentials/*
+
+/technology/_SUBSITES/elearning
+/technology/_SUBSITES/elearningOLD/*
 
 /tmp/*
 
