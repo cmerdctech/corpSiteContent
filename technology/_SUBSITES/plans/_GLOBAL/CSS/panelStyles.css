@@ -1,0 +1,105 @@
+.techPanel{
+margin:20px;
+}
+
+.prose1{
+font-size:10pt;
+margin-bottom:15px;
+width:400px;
+}
+
+.prose2{
+font-size:10pt;
+margin-left:50px;
+margin-bottom:15px;
+width:500px;
+}
+
+.align-right { float:right; margin: 0 0 15px 15px; }
+.align-left { float:left; margin: 0 15px 15px 0; }
+
+
+
+.panelItemContainer .featureQuotation{
+margin:20px 0px 10px 10px;
+font-size:9pt;
+}
+
+.panelItemContainer .featureQuotation .attribution{
+font-style:italic;
+}
+
+
+
+.techPanel a{
+color:gray;
+padding-left:10px;
+}
+.techPanel a:hover{
+color:blue;
+padding-left:20px;
+}
+
+
+
+.pageHeadline{
+font-size:180%;
+margin-bottom:10px;
+}
+
+.subHead{
+font-size:130%;
+font-style:italic;
+margin-bottom:10px;
+}
+
+.prose{
+margin-top:10px;
+margin-left:20px;
+font-size:10pt;
+width:450px;
+}
+
+
+
+.benefit{
+margin-top:25px;
+margin-left:20px;
+font-size:10pt;
+}
+
+.benefit .title{
+font-weight:bold;
+}
+.benefit .description{
+font-style:italic;
+}
+.benefit .section{
+font-style:italic;
+font-weight:bold;
+margin:15px 15px;
+}
+
+.listFeature{
+margin-left:15px;
+margin-bottom:5px;
+list-style-type: disc;
+}
+
+.listFeature:before{
+content:"• ";
+}
+
+
+.techDetails{
+margin:20px 0px 0px 20px;
+}
+
+.techDetails td{
+padding-bottom:3px;
+padding-right:10px;
+}
+
+b{
+font-weight:bold;
+}

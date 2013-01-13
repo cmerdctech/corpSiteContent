@@ -3,6 +3,7 @@ background:white;
 font-family: 'Open Sans', sans-serif;
 }
 
+
 .headerblock{
 	height:70px;width:1000px;margin:0px 0px 0px 0px;
 	text-align:left;
@@ -84,30 +85,6 @@ width:1000px;text-align:center;font-size:10pt;margin-top:25px;border-top:1pt sol
 }
 
 
-.panelFirstLine{
-font-family: 'Open Sans Condensed', sans-serif;
-font-weight:bold;
-margin-bottom:30px;
-font-size:18pt;
-}
-
-.panelWisecrackBlock{
-width:700px;
-}
-
-.panelWisecrack{
-margin-left:50px;
-}
-
-.panelLastLine{
-font-weight:bold;
-font-style:italic;
-margin-bottom:30px;
-margin-top:30px;
-font-size:18pt;
-}
-
-
 /*NAVIGATION BAR STYLES =========================================*/
 
 ul.dropdown a:hover{
@@ -153,6 +130,17 @@ font-size:180%;
 margin-bottom:10px;
 }
 
+
+.panelTextContainer .listFeature{
+	margin-left:15px;
+	margin-bottom:5px;
+	list-style-type: disc;
+	font-size:10pt;
+}
+
+.panelTextContainer .listFeature:before{
+content:"• ";
+}
 .subHead{
 font-size:130%;
 font-style:italic;
@@ -179,7 +167,7 @@ padding-top:10px;
 
 .learnMore{
 font-weight:bold;
-margin:5px 0px 0px 40px;;
+margin:15px 10px 0px 40px;;
 }
 
 .panelItemContainer a{
@@ -191,15 +179,29 @@ color:blue;
 padding-left:20px;
 }
 
-.listFeature{
+.featureBlock .listFeature{
 	margin-left:15px;
 	margin-bottom:5px;
 	list-style-type: disc;
+	font-size:8pt;
 }
 
-.listFeature:before{
+.featureBlock .listFeature:before{
 content:"• ";
 }
+
+
+
+.featureBlock .featureQuotation{
+margin:20px 0px 0px 10px;
+font-size:9pt;
+}
+
+.featureBlock .featureQuotation .attribution{
+font-style:italic;
+}
+
+
 
 .quote{
 color:#297FFF;
@@ -215,6 +217,7 @@ padding-left:200px;
 .detailHeadline{
 font-weight:bold;
 font-size:110%;
+margin:5px 0px 5px 0px;
 }
 
 .benefit{
@@ -246,9 +249,56 @@ margin-top:10px;
 border-top:1pt solid #f2f2f2;
 }
 
+
+}
+
+/* feature column contents ==========================================*/
+
+
+.featureBlock{
+font-size:10pt;
+margin:10px 0px 10px 20px;
+width:250px;
+}
+
+.featureBlock p{
+margin-bottom:10px;
+}
+
+
 .featureHeadline{
 font-weight:bold;
+font-size:130%;
+}
+
+/* page contents ==========================================*/
+
+
+.detailPage{
+font-size:10pt;
+width:500px;
+}
+
+.detailPage .content{
+margin-left:50px;
+margin-top:20px;
+}
+
+.detailPage p{
+margin-bottom:10pt;
+width:600px;
+}
+
+.detailPage .subTitle{
+margin:10px 0px 10px 0px;
 font-size:110%;
+font-weight:bold;
+
+}
+
+.feature{
+font-size:10pt;
+margin:10px 0px 10px 40px;
 }
 
 .panelFeaturesList{
@@ -262,4 +312,21 @@ font-size:10pt;
 
 .featureQuotation .attribution{
 font-style:italic;
+}
+
+td .listFeature{
+padding-bottom:5px;
+}
+
+.capital{
+
+TEXT-DECORATION: none;
+text-transform: capitalize;
+}
+
+.capital p:first-letter {
+color:#4BB2FF;
+font-size:130%;
+font-weight:bold;
+letter-spacing: 2px;
 }
