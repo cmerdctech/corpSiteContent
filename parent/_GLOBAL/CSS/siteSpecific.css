@@ -64,17 +64,18 @@ color:#2a7fff;
 
 .sitemapItem{
 font-weight:bold;margin-bottom:5px;
-color:#ccc;
+color:#666;
 }
 
 .sitemapItem a{
-font-weight:bold;margin-bottom:5px;
-color:#ccc;
+font-weight:normal;
+margin-bottom:5px;
+color:#666;
 }
 
 .sitemapItem a:hover{
 font-weight:bold;margin-bottom:5px;
-color:#666;
+color:#ccc;
 }
 
 .footerContactBlock{
