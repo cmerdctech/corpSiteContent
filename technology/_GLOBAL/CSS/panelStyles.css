@@ -75,6 +75,14 @@ font-weight:bold;
 margin:15px 15px;
 }
 
+.closer{
+margin-top:15px;
+}
+
+.farther{
+margin-top:35px;
+}
+
 .listFeature{
 margin-left:15px;
 margin-bottom:5px;

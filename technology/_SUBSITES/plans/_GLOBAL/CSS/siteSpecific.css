@@ -186,6 +186,15 @@ padding-left:20px;
 	font-size:8pt;
 }
 
+
+
+.featureBlock .prose{
+margin-top:10px;
+margin-left:20px;
+font-size:10pt;
+width:225px;
+}
+
 .featureBlock .listFeature:before{
 content:"• ";
 }
@@ -264,6 +273,33 @@ width:250px;
 .featureBlock p{
 margin-bottom:10px;
 }
+
+
+
+.featureBlock .detailHeadline{
+font-weight:bold;
+font-size:110%;
+margin:5px 0px 5px 10px;
+color:gray;
+}
+
+.featureBlock .featureHeadline{
+font-weight:bold;
+font-size:130%;
+background:#F2F2F2;
+color:#686666;
+height:20px;
+padding:20px 0px 20px 5px;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+
+	-moz-box-shadow: inset -2px -2px 2px #888;
+	-webkit-box-shadow: inset -2px -2px 2px #888;
+	box-shadow: inset -2px -2px 2px #888;
+	
+}
+
 
 
 .featureHeadline{
