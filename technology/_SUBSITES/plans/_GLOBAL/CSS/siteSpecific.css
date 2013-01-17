@@ -180,13 +180,6 @@ color:blue;
 padding-left:20px;
 }
 
-.featureBlock .listFeature{
-	margin-left:15px;
-	margin-bottom:5px;
-	list-style-type: disc;
-	font-size:8pt;
-}
-
 
 
 .featureBlock .prose{
@@ -197,9 +190,17 @@ width:225px;
 }
 
 .featureBlock .listFeature:before{
-content:"• ";
+content:"-- ";
 }
 
+
+.featureBlock .listFeature{
+	margin-left:15px;
+	margin-bottom:5px;
+	list-style-type: disc;
+	font-size:8pt;
+	color:#577FFF;
+}
 
 
 .featureBlock .featureQuotation{
@@ -260,10 +261,14 @@ border-top:1pt solid #f2f2f2;
 }
 
 
-}
 
 /* feature column contents ==========================================*/
 
+#feature{
+
+min-height:517px;
+background:#F2F2F2;
+}
 
 .featureBlock{
 font-size:10pt;
@@ -278,7 +283,7 @@ margin-bottom:10px;
 
 
 .featureBlock .detailHeadline{
-font-weight:bold;
+font-weight:normal;
 font-size:110%;
 margin:5px 0px 5px 10px;
 color:gray;
@@ -287,18 +292,8 @@ color:gray;
 .featureBlock .featureHeadline{
 font-weight:bold;
 font-size:130%;
-background:#F2F2F2;
 color:#686666;
-height:20px;
-padding:20px 0px 20px 5px;
-	border-radius: 10px 10px 10px 10px;
-	-moz-border-radius: 10px 10px 10px 10px;
-	-webkit-border-radius: 10px 10px 10px 10px;
 
-	-moz-box-shadow: inset -2px -2px 2px #888;
-	-webkit-box-shadow: inset -2px -2px 2px #888;
-	box-shadow: inset -2px -2px 2px #888;
-	
 }
 
 
