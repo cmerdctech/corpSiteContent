@@ -3,6 +3,10 @@ background:white;
 font-family: 'Open Sans', sans-serif;
 }
 
+.title{
+margin-bottom:10px;
+}
+
 .headerblock{
 	height:70px;width:1000px;margin:0px 0px 0px 0px;
 	text-align:left;
@@ -159,3 +163,6 @@ ul.dropdown ul li{
 	color: #000;
 }
 
+.small{
+font-size:8pt;
+}

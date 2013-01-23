@@ -82,7 +82,6 @@ margin:15px 15px;
 
 .listFeature{
 margin-left:15px;
-margin-bottom:5px;
 list-style-type: disc;
 }
 
@@ -102,4 +101,11 @@ padding-right:10px;
 
 b{
 font-weight:bold;
+}
+
+.annotationPanel{
+background:white;
+height:50px;
+padding-top:15px;
+text-align:center;
 }
