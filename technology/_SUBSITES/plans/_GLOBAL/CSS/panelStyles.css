@@ -47,9 +47,10 @@ font-size:180%;
 margin-bottom:10px;
 }
 
-.subHead{
-font-size:130%;
-font-style:italic;
+.panelItemContainer .subHead{
+font-size:115%;
+color:gray;
+font-style:normal;
 margin-bottom:10px;
 }
 

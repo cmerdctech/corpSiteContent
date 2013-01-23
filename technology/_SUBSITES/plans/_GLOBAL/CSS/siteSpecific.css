@@ -362,3 +362,46 @@ font-size:130%;
 font-weight:bold;
 letter-spacing: 2px;
 }
+
+.screenshotsCallout{
+border:1pt solid red;padding:10px;margin:10px;float:right;
+}
+
+
+.simpleButton{
+	color:#297FFF;
+	background:#f2f2f2;
+  	font-weight:bold;
+	border-top:1pt solid gray;
+	cursor:pointer;
+	border-top:1pt solid #666;
+	border-left:1pt solid #666;
+	border-right:1pt solid #000;
+	border-bottom:1pt solid #000;
+	text-align:center;
+	padding-left:2px;
+	padding-right:2px;
+	width:120px;
+	height:30px;
+	margin-right:10px;
+  -moz-border-radius: 4px; /* Firefox */
+  -webkit-border-radius: 4px; /* Safari, Chrome */
+  border-radius: 4px; /* CSS3 */
+	-webkit-box-shadow:none;
+	   -moz-box-shadow:none;
+	        box-shadow:none;
+/*
+	-webkit-box-shadow:2px 3px 5px rgba(0, 0, 0, .5);
+	   -moz-box-shadow:2px 3px 5px rgba(0, 0, 0, .5);
+	        box-shadow:2px 3px 5px rgba(0, 0, 0, .5);
+*/
+}
+
+
+.simpleButton:hover{
+	background:#f2f2f2;
+	color:#666;
+  -moz-border-radius: 4px; /* Firefox */
+  -webkit-border-radius: 4px; /* Safari, Chrome */
+  border-radius: 4px; /* CSS3 */
+}
