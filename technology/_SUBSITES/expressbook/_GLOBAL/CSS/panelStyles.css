@@ -2,10 +2,6 @@
 margin:20px;
 }
 
-.widthConstraint{
-width:570px;
-}
-
 .prose1{
 font-size:10pt;
 margin-bottom:15px;
@@ -19,13 +15,18 @@ margin-bottom:15px;
 width:500px;
 }
 
+.align-right { float:right; margin: 0 0 15px 15px; }
+.align-left { float:left; margin: 0 15px 15px 0; }
 
 
 
-.learnMore{
-font-size:10pt;
-font-weight:bold;
-margin:5px 0px 0px 40px;;
+.panelItemContainer .featureQuotation{
+margin:20px 0px 10px 10px;
+font-size:9pt;
+}
+
+.panelItemContainer .featureQuotation .attribution{
+font-style:italic;
 }
 
 
@@ -46,9 +47,10 @@ font-size:180%;
 margin-bottom:10px;
 }
 
-.subHead{
-font-size:130%;
-font-style:italic;
+.panelItemContainer .subHead{
+font-size:115%;
+color:gray;
+font-style:normal;
 margin-bottom:10px;
 }
 
@@ -79,28 +81,18 @@ font-weight:bold;
 margin:15px 15px;
 }
 
-.small{
-font-size:8pt;
+a{
+background:url(../images/ICON_Link_Device_Blue_01.png) no-repeat;
 }
-
-.closer{
-margin-top:15px;
-}
-
-.farther{
-margin-top:35px;
+a{
+background:url(../images/ICON_Link_Device_Silver_01.png) no-repeat;
 }
 
 .listFeature{
 margin-left:15px;
-margin-bottom:5px;
 list-style-type: disc;
 }
 
-
-.benefitTable{
-width:569px;
-}
 .listFeature:before{
 content:"• ";
 }
@@ -113,4 +105,15 @@ margin:20px 0px 0px 20px;
 .techDetails td{
 padding-bottom:3px;
 padding-right:10px;
+}
+
+b{
+font-weight:bold;
+}
+
+.annotationPanel{
+background:white;
+height:50px;
+padding-top:15px;
+text-align:center;
 }
