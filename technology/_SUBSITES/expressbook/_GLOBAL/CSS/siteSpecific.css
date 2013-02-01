@@ -92,8 +92,6 @@ width:1000px;text-align:center;font-size:10pt;margin-top:25px;border-top:1pt sol
 	width:900px;
 	height:500px;
 	font-size:14pt;
-	color:red;
-	color: #2a7fff;
 	overflow:hidden;
 	text-align:left;
 	background:#f2f2f2;
@@ -193,6 +191,11 @@ font-size:8pt;
 height:275px;
 }
 
+.smallHead{
+font-size:10pt;
+font-weight:bold;
+
+}
 .featureTextContainer .subTitle{
 font-weight:bold;
 margin:5px 0px 5px 0px;
