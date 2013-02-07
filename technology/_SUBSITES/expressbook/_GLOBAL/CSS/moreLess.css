@@ -1,0 +1,23 @@
+.moreButton{
+	height:25px;
+	width:50px;
+	background:#aaf;
+	position:absolute;
+	bottom:0px;
+	right:0px;
+}
+.moreButton:hover{
+	background:#afa;
+}
+
+.lessButton{
+	height:25px;
+	width:50px;
+	background:#faa;
+	position:absolute;
+	bottom:0px;
+	right:0px;
+}
+.lessButton:hover{
+	background:#aaa;
+}

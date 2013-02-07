@@ -94,7 +94,7 @@ width:1000px;text-align:center;font-size:10pt;margin-top:25px;border-top:1pt sol
 	font-size:14pt;
 	overflow:hidden;
 	text-align:left;
-	background:#f2f2f2;
+	background:white;
 }
 
 .panelFirstLine{
@@ -186,9 +186,9 @@ width:500px;
 }
 
 .featureTextContainer{
-overflow:scroll;
 font-size:8pt;
-height:275px;
+height:245px;
+position:relative;
 }
 
 .smallHead{

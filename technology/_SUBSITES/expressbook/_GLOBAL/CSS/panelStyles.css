@@ -132,14 +132,37 @@ text-align:center;
 
 }
 
+
+.screenshot .image{
+text-align:center;
+}
 .screenshot .caption{
-font-size:12pt;
+font-size:10pt;
 color:gray;
 text-align:center;
 height:60px;
 padding-top:20px;
+text-align:left;
+margin-left:20px;
 }
 
-.screenshot .image{
-text-align:center;
+.caption .firstLine{
+font-size:11pt;
+color:black;
+font-family:serif;
+margin-bottom:5px;
+font-weight:bold;
+}
+
+.caption .subsequentLine{
+color:#395CD0;
+font-family:sans-serif;
+margin-bottom:5px;
+font-weight:bold;
+}
+
+.caption .postScript{
+color:#395CD0;
+font-family:sans-serif;
+font-size:8pt;margin-top:3px;
 }

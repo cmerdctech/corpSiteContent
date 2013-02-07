@@ -1,1 +1,18 @@
-this is a placeholder so git will initialize this directory. put images in here
+You can put javascript into:
+
+/_GLOBAL/JS/file.js 
+
+or
+
+in a page directory as
+
+jqueryReadyScript.js 
+
+In both cases, the result is put inside a $.ready() so it will execute after
+the page load.
+
+You can put page specific CSS into a page directory in a file named
+
+thisPage.css
+
+it is added to the CSS chain last.

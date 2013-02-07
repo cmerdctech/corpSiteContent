@@ -7,6 +7,11 @@
 /technology/_SUBSITES/elearning
 /technology/_SUBSITES/viewpoint
 
+/technology/_SUBSITES/plans
+/technology/_SUBSITES/systems
+/technology/_SUBSITES/programming
+/technology/_SUBSITES/data
+
 /tmp/*
 
 public/media/hash/*
