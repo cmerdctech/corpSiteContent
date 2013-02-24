@@ -1,0 +1,21 @@
+.panelBlockNouveau{
+font-size:12pt;
+}
+
+.panelBlockNouveau .marginator{
+margin:20px;
+}
+
+.headline{
+font-weight:bold;
+margin:10px 0px 10px 0px;
+}
+
+.prose .emphasis{
+font-weight:bold;
+
+}
+
+.topic{
+font-weight:normal;
+}

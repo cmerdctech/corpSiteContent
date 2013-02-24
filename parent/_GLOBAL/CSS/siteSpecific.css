@@ -127,15 +127,27 @@ margin-top:30px;
 font-size:18pt;
 }
 
+.anythingSlider-default .anythingControls a {
+    background: #f2f2f2 !important;
+    border-radius: 0 0 5px 5px;
+}
+
 .anythingSlider-default.activeSlider .anythingControls a{
-	background:#f2f2f2 !important;
-	color:#ccc !important;
+	color:#bbb; /*color of type in the tab, not hover or current*/
+}
+.anythingSlider-default.activeSlider .anythingControls a.cur,
+.anythingSlider-default.activeSlider .anythingControls a:hover{
+color:#fff;
+background:#aaa !important;
 }
 .anythingSlider-default.activeSlider .anythingWindow {
 	border-color: white !important;
 	border-bottom:2pt solid #f2f2f2 !important;
 }
 
+.anythingSlider-default .anythingControls a.start-stop{
+	color:#bbb !important; /*color of type in the tab, not hover or current*/
+}
 
 /*NAVIGATION BAR STYLES =========================================*/
 
