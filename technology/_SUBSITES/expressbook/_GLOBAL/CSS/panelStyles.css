@@ -89,14 +89,6 @@ font-weight:bold;
 margin:15px 15px;
 }
 
-.learnMore{
-	height:50px;
-	width:50px;
-background:url(../images/ICON_Link_Device_Blue_01.png) no-repeat;
-}
-.learnMore:hover{
-background:url(../images/ICON_Link_Device_Silver_01.png) no-repeat;
-}
 
 .listFeature{
 margin-left:15px;
