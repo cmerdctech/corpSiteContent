@@ -1,0 +1,13 @@
+.learnMore{
+	font-weight:bold;
+	font-size:12pt;
+	margin:5px 0px 5px 0px;
+}
+
+.learnMore a{
+	cursor:pointer;
+	background:url(../images/ICON_Link_Device_Blue_01.png) no-repeat scroll center 5px transparent;
+}
+.learnMore a:hover{
+	background:url(../images/ICON_Link_Device_Silver_01.png) no-repeat scroll center 5px transparent;
+}
