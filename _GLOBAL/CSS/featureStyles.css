@@ -1,3 +1,5 @@
+.featureStylesFileIndicator{color:black;} /*this is here to show which file in browser debug*/
+
 .learnMore{
 	font-weight:bold;
 	font-size:12pt;
@@ -10,4 +12,20 @@
 }
 .learnMore a:hover{
 	background:url(../images/ICON_Link_Device_Silver_01.png) no-repeat scroll center 5px transparent;
+}
+
+.imageAnchor{
+	cursor:pointer;
+	background:url(../images/ICON_Link_Device_Blue_01.png) no-repeat scroll center 5px transparent;
+}
+.imageAnchor:hover{
+	background:url(../images/ICON_Link_Device_Silver_01.png) no-repeat scroll center 5px transparent;
+}
+
+.imageAnchorSmall{
+	cursor:pointer;
+	background:url(../images/ICON_Link_Device_Blue_small.png) no-repeat scroll center 5px transparent;
+}
+.imageAnchorSmall:hover{
+	background:url(../images/ICON_Link_Device_Silver_small.png) no-repeat scroll center 5px transparent;
 }

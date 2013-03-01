@@ -1,95 +1,105 @@
-.techPanel{
-margin:20px;
+.techPanel { margin: 20px; }
+
+.prose1
+{
+	font-size: 10pt;
+	margin-bottom: 15px;
+	width: 400px;
 }
 
-.prose1{
-font-size:10pt;
-margin-bottom:15px;
-width:400px;
+.prose2
+{
+	font-size: 10pt;
+	margin-left: 50px;
+	margin-bottom: 15px;
+	width: 300px;
+	text-align: left;
 }
 
-.prose2{
-font-size:10pt;
-margin-left:50px;
-margin-bottom:15px;
-width:500px;
+.prose3
+{
+	font-size: 10pt;
+	margin-left: 50px;
+	margin-bottom: 15px;
+	width: 600px;
 }
 
-.prose3{
-font-size:10pt;
-margin-left:50px;
-margin-bottom:15px;
-width:600px;
+.statement{font-weight:bold;color:#666;font-size:105%;}
 
+.displayCopy { font-size: 10pt; text-align:left; }
+.displayCopy p { margin-bottom: 20px; }
+.displayCopy p .emphatic { font-weight:bold; }
+
+.tighterCopy { font-size: 10pt; text-align:left; }
+.tighterCopy p { margin-bottom: 10px; }
+.tighterCopy p .emphatic { font-weight:bold; }
+
+.annotation{
+font-size:8pt;
 }
 
-
-
-.techPanel a{
-color:gray;
-padding-left:10px;
-}
-.techPanel a:hover{
-color:blue;
-padding-left:20px;
+.techPanel a
+{
+	color: gray;
+	padding-left: 10px;
 }
 
-
-
-.pageHeadline{
-font-size:180%;
-margin-bottom:10px;
+.techPanel a:hover
+{
+	color: blue;
+	padding-left: 20px;
 }
 
-.subHead{
-font-size:130%;
-font-style:italic;
-margin-bottom:10px;
+.pageHeadline
+{
+	font-size: 180%;
+	margin-bottom: 10px;
 }
 
-.prose{
-margin-top:10px;
-margin-left:20px;
-font-size:10pt;
-width:450px;
+.subHead
+{
+	font-size: 130%;
+	font-style: italic;
+	margin-bottom: 10px;
 }
 
-
-
-.benefit{
-margin-top:25px;
-margin-left:20px;
-font-size:10pt;
+.prose
+{
+	margin-top: 10px;
+	margin-left: 20px;
+	font-size: 10pt;
+	width: 450px;
 }
 
-.benefit .title{
-font-weight:bold;
-}
-.benefit .description{
-font-style:italic;
-}
-.benefit .section{
-font-style:italic;
-font-weight:bold;
-margin:15px 15px;
+.benefit
+{
+	margin-top: 25px;
+	margin-left: 20px;
+	font-size: 10pt;
 }
 
-.listFeature{
-margin-left:15px;
-margin-bottom:5px;
-list-style-type: disc;
+.benefit .title { font-weight: bold; }
+.benefit .description { font-style: italic; }
+
+.benefit .section
+{
+	font-style: italic;
+	font-weight: bold;
+	margin: 15px 15px;
 }
 
-.listFeature:before{
-content:"• ";
+.listFeature
+{
+	margin-left: 15px;
+	margin-bottom: 5px;
+	list-style-type: disc;
 }
 
+.listFeature:before { content: "• "; }
+.techDetails { margin: 20px 0px 0px 20px; }
 
-.techDetails{
-margin:20px 0px 0px 20px;
-}
-
-.techDetails td{
-padding-bottom:3px;
-padding-right:10px;
+.techDetails td
+{
+	padding-bottom: 3px;
+	padding-right: 10px;
 }

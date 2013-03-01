@@ -1,0 +1,7 @@
+.baseCssFileIndicator{color:black;} /*this is here to show which file in browser debug*/
+
+
+body{
+background:white;
+font-family: 'Open Sans', sans-serif;
+}

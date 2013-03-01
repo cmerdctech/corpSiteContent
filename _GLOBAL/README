@@ -1,0 +1,7 @@
+At the site level, components in the page directory overwrite corresponding components
+in the _GLOBAL/COMPONENTS directory. That is not the case at the superGlobal level.
+
+Everything in this directory is written to the resulting page. It is written first so 
+that any corresponding elements at the site or page level can, if appropriate, supercede
+it. Of course, that's often not meaningful but, if it is, it will happen.
+

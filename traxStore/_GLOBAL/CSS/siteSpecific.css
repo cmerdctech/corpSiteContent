@@ -1,7 +1,4 @@
-body{
-background:white;
-font-family: 'Open Sans', sans-serif;
-}
+
 
 .headerblock{
 	height:70px;width:1000px;margin:0px 0px 0px 0px;
@@ -122,32 +119,9 @@ font-size:18pt;
 }
 
 
-/*NAVIGATION BAR STYLES =========================================*/
+/* Navigation styles are in superGlobal */
 
-ul.dropdown a:hover{
-	color: #000;
-}
-ul.dropdown a:active{
-	color: #ffa500;
-}
-ul.dropdown li a
-{
-	border-right: 1px solid #333;
-	color:#2a7fff;
-}
-ul.dropdown li:hover{
-	background: #F3D673;
-	color: #2a7fff;
-}
-ul.dropdown li.hover a{
-	color: black;
-}
 
-/*refers to subsequent levels of popup, if present*/
-ul.dropdown ul li{
-	background: #f6f6f6;
-	color: #000;
-}
 
 /*FROM TRAX SITE =========================================*/
 
