@@ -34,6 +34,9 @@
 .tighterCopy p { margin-bottom: 10px; }
 .tighterCopy p .emphatic { font-weight:bold; }
 
+.displayCopy .featureName { font-weight:bold;margin-bottom:3px; }
+.displayCopy .explanation {font-weight:normal; margin-left:15px;margin-bottom:10px; }
+
 .annotation{
 font-size:8pt;
 }
