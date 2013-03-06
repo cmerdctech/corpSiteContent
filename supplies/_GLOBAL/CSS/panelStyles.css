@@ -1,95 +1,34 @@
-.techPanel{
-margin:20px;
-}
+.statement{font-weight:bold;color:#666;font-size:105%;}
 
-.prose1{
-font-size:10pt;
-margin-bottom:15px;
-width:400px;
-}
+.highlight{font-weight:bold;color:black;font-size:105%;}
 
-.prose2{
-font-size:10pt;
-margin-left:50px;
-margin-bottom:15px;
-width:500px;
-}
+.featureParagraph { font-size: 10pt; text-align:left; line-height:1.5}
+.featureParagraph p { margin-bottom: 20px; }
+.featureParagraph .emphatic { font-weight:bold; font-size:110%;}
 
-.footnote{
-font-size:10pt;
-margin-top:25px;
-margin-bottom:15px;
-width:500px;
-}
+.displayCopy { font-size: 10pt; text-align:left; margin-bottom:10px;}
+.displayCopy p { margin-bottom: 20px; }
+.displayCopy .list { margin: 0px 0px 10px 20px; }
+.displayCopy p .emphatic { font-weight:bold; }
 
+.tighterCopy { font-size: 10pt; text-align:left; }
+.tighterCopy p { margin-bottom: 10px; }
+.tighterCopy p .emphatic { font-weight:bold; }
 
+.displayCopy .featureName { font-weight:bold;margin-bottom:3px; }
+.displayCopy .explanation {font-weight:normal; margin-left:15px;margin-bottom:10px; }
 
-
-.techPanel a{
-color:gray;
-padding-left:10px;
-}
-.techPanel a:hover{
-color:blue;
-padding-left:20px;
-}
-
-
-
-.pageHeadline{
-font-size:180%;
-margin-bottom:10px;
-}
-
-.subHead{
-font-size:130%;
-font-style:italic;
-margin-bottom:10px;
-}
-
-.prose{
-margin-top:10px;
-margin-left:20px;
-font-size:10pt;
-width:450px;
-}
-
-
-
-.benefit{
-margin-top:25px;
-margin-left:20px;
-font-size:10pt;
-}
-
-.benefit .title{
-font-weight:bold;
-}
-.benefit .description{
-font-style:italic;
-}
-.benefit .section{
-font-style:italic;
-font-weight:bold;
-margin:15px 15px;
+.annotation{
+font-size:8pt;
 }
 
 .listFeature{
-margin-left:15px;
-margin-bottom:5px;
-list-style-type: disc;
+	margin:0px 0px 5px 25px;
+	font-size:8pt;
 }
 
-.listFeature:before{
-content:"• ";
-}
-
-
-.techDetails{
-margin:20px 0px 0px 20px;
-}
-
-.techDetails td{
-padding-bottom:3px;
-padding-right:10px;
+#logoTable td{
+height:45px;
+width:134px;
+padding:2px;
 }
