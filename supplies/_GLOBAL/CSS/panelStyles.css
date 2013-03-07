@@ -46,3 +46,12 @@ background:url(../images/goButtonHover.jpg);
 color:white;
 font-size:18px;
 }
+
+.sliderTopControls li {
+    background: none repeat scroll 0 0 #E6E3E3;
+    border-radius: 0 0 0 0;
+    box-shadow: -2px -2px 2px #888888 inset;
+    display: inline;
+    margin: 0 3px;
+    padding: 0 17px;
+}
