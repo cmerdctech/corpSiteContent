@@ -7,7 +7,7 @@
 .featureParagraph .emphatic { font-weight:bold; font-size:110%;}
 
 .displayCopy { font-size: 10pt; text-align:left; margin-bottom:10px;}
-.displayCopy p { margin-bottom: 20px; }
+.displayCopy p { margin-bottom: 10px; }
 .displayCopy .list { margin: 0px 0px 10px 20px; }
 .displayCopy p .emphatic { font-weight:bold; }
 
@@ -31,4 +31,18 @@ font-size:8pt;
 height:45px;
 width:134px;
 padding:2px;
+}
+
+.goButton{
+background:url(../images/goButtonReady.jpg);
+cursor:pointer;
+}
+
+.goButton:hover{
+background:url(../images/goButtonHover.jpg);
+}
+
+.chalkField{
+color:white;
+font-size:18px;
 }
