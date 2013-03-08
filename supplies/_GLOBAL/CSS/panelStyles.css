@@ -1,26 +1,4 @@
-.statement{font-weight:bold;color:#666;font-size:105%;}
 
-.highlight{font-weight:bold;color:black;font-size:105%;}
-
-.featureParagraph { font-size: 10pt; text-align:left; line-height:1.5}
-.featureParagraph p { margin-bottom: 20px; }
-.featureParagraph .emphatic { font-weight:bold; font-size:110%;}
-
-.displayCopy { font-size: 10pt; text-align:left; margin-bottom:10px;}
-.displayCopy p { margin-bottom: 10px; }
-.displayCopy .list { margin: 0px 0px 10px 20px; }
-.displayCopy p .emphatic { font-weight:bold; }
-
-.tighterCopy { font-size: 10pt; text-align:left; }
-.tighterCopy p { margin-bottom: 10px; }
-.tighterCopy p .emphatic { font-weight:bold; }
-
-.displayCopy .featureName { font-weight:bold;margin-bottom:3px; }
-.displayCopy .explanation {font-weight:normal; margin-left:15px;margin-bottom:10px; }
-
-.annotation{
-font-size:8pt;
-}
 
 .listFeature{
 	margin:0px 0px 5px 25px;

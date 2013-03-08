@@ -148,3 +148,8 @@ body
 	font-size: 10pt;
 	width: 450px;
 }
+
+.emphatic{
+font-weight:bold;
+font-size:105%;
+}

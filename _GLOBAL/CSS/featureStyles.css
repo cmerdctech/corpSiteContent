@@ -29,3 +29,18 @@
 .imageAnchorSmall:hover{
 	background:url(../images/ICON_Link_Device_Silver_small.png) no-repeat scroll center 5px transparent;
 }
+
+
+.learnMoreTextBlue{
+	font-weight:bold;
+	color:#297FFF;
+}
+
+.learnMoreTextBlue a{
+	cursor:pointer;
+	font-size:14pt;
+	background:url(../images/ICON_Link_Device_Blue_01.png) no-repeat scroll center 5px transparent;
+}
+.learnMoreTextBlue a:hover{
+	background:url(../images/ICON_Link_Device_Silver_01.png) no-repeat scroll center 5px transparent;
+}
