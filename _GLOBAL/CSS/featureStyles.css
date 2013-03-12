@@ -44,3 +44,13 @@
 .learnMoreTextBlue a:hover{
 	background:url(../images/ICON_Link_Device_Silver_01.png) no-repeat scroll center 5px transparent;
 }
+
+
+.downloadPdf{
+	background:url(../images/downloadPdfReady.png) no-repeat scroll center center transparent;
+	width:90px;
+	height:45px;
+}
+.downloadPdf:hover{
+	background:url(../images/downloadPdfReady.png) no-repeat scroll center center transparent;
+}
