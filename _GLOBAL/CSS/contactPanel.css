@@ -1,3 +1,15 @@
+.contactButton{
+	background:url(../images/requestContactReady.png);
+	height:45px;
+	width:90px;
+	cursor:pointer;
+}
+
+.contactButton:hover{
+	background:url(../images/requestContactHover.png);
+}
+
+
 .contactPanel{
 	height:300px;
 	width:300px;
@@ -20,17 +32,13 @@
 height:30px;text-align:center;border-bottom:1pt solid gray;padding-bottom:10px;margin-bottom:10px;
 }
 
+.contactPanel .header .subTitle{
+	font-size:80%;
+	font-weight:normal;
+	margin:3px 0px 0px 0px;
+}
+
 .contactPanel td{
 	padding:10px 10px 2px 0px;
 }
 
-.contactButton{
-	background:url(../images/requestContactReady.png);
-	height:45px;
-	width:90px;
-	cursor:pointer;
-}
-
-.contactButton:hover{
-	background:url(../images/requestContactHover.png);
-}
