@@ -22,7 +22,7 @@ width:500px;
 	margin:-28px 0px 0px 0px;
 	float:right;color:#666;
 	height:0px; /*for some reason this block rides at the bottom of the enclosing div, I set this so it doesn't hang out.*/
-	width:415px; /*this moves the left justified tagline horizontally*/
+	width:365px; /*this moves the left justified tagline horizontally*/
 }
 
 .navBlock{

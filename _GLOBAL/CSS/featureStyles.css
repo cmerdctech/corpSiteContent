@@ -52,5 +52,5 @@
 	height:45px;
 }
 .downloadPdf:hover{
-	background:url(../images/downloadPdfReady.png) no-repeat scroll center center transparent;
+	background:url(../images/downloadPdfHover.png) no-repeat scroll center center transparent;
 }

@@ -14,3 +14,11 @@
 
 
 
+.sentryFileDownload{
+	background:url(../images/sentryFileDownloadReady.png) no-repeat scroll center center transparent;
+	height:69px;
+	width:180px;
+}
+.sentryFileDownload:hover{
+	background:url(../images/sentryFileDownloadHover.png) no-repeat scroll center center transparent;
+}
