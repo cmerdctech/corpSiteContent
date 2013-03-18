@@ -1,58 +1,48 @@
-
-
-
-
-
-
-.mainContentContainer{
-
+.mainContentContainer {
 }
 
-.panelBlock{
-	width:900px;
-	height:500px;
-	font-size:14pt;
-	color:red;
+.panelBlock {
+	width: 900px;
+	height: 500px;
+	font-size: 14pt;
+	color: red;
 	color: #2a7fff;
-	overflow:hidden;
-	text-align:left;
-	background:#f2f2f2;
+	overflow: hidden;
+	text-align: left;
+	background: #f2f2f2;
 }
 
-.panelFirstLine{
-font-family: 'Open Sans Condensed', sans-serif;
-font-weight:bold;
-margin-bottom:30px;
-font-size:18pt;
+.panelFirstLine {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 700;
+	margin-bottom: 30px;
+	font-size: 18pt;
 }
 
-.panelWisecrackBlock{
-width:700px;
+.panelWisecrackBlock {
+	width: 700px;
 }
 
-.panelWisecrack{
-margin-left:50px;
+.panelWisecrack {
+	margin-left: 50px;
 }
 
-.panelLastLine{
-font-weight:bold;
-font-style:italic;
-margin-bottom:30px;
-margin-top:30px;
-font-size:18pt;
+.panelLastLine {
+	font-weight: 700;
+	font-style: italic;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	font-size: 18pt;
 }
 
-.anythingSlider-default.activeSlider .anythingControls a{
-	background:#f2f2f2 !important;
-	color:#ccc !important;
+.anythingSlider-default.activeSlider .anythingControls a {
+	background: #f2f2f2 !important;
+	color: #ccc !important;
 }
+
 .anythingSlider-default.activeSlider .anythingWindow {
-	border-color: white !important;
-	border-bottom:2pt solid #f2f2f2 !important;
+	border-color: #FFF !important;
+	border-bottom: 2pt solid #f2f2f2 !important;
 }
-
 
 /* Navigation styles are in superGlobal */
-
-
-
