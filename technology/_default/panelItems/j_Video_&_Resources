@@ -1,0 +1,36 @@
+<div class='techPanel' id='video'>
+
+<div style='font-size:24pt;margin-bottom:20px;'>
+Flipped or Not,<br/>Today's Classroom Needs Good Video
+</div>
+
+<div class='prose1'>
+
+If there's one thing that has become perfectly clear, it's that today's young students
+absorb information more easily with a video presentation. Books might be better but, it's
+no longer a choice. Video is the way young people like to learn.
+</div>
+<div class='prose1'>
+Fortunately, the Innovation Team has been helping schools meet the changing needs of students
+since the old days of 16mm film. Now, instead of checking out a film, we provide excellent
+online video resources for every learning situation and topic.
+</div>
+<div class='prose1'>
+Better still, we work with vendors that provide world-class content that is Moodle compatible
+and that are thrilled to provide you with a free trial. 
+</div>
+
+
+
+<div class='learnMore'>
+More information about our video offerings <a href='http://video.<!baseDomain!>'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+</div>
+
+<div class='learnMore'>
+Learn more about the flipped classroom and eLearning <a href='http://elearning.<!baseDomain!>'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+</div>
+
+			<div class='learnMore'>
+ For pricing or a free trial, please contact Nancy Johnson <span class='learnMoreTextBlue'> <a href='#' class='contactFormButton' buttonId='technology: Video & Resources' formName='njohnsonContact'>&nbsp;&nbsp;&nbsp;&nbsp;</a></span>
+			</div>
+</div>
