@@ -26,6 +26,10 @@ font-weight:bold;
 margin:5px 0px 0px 40px;;
 }
 
+.learnMore a{
+font-size:14pt;
+}
+
 
 
 .techPanel a{
@@ -95,4 +99,8 @@ margin:20px 0px 0px 20px;
 .techDetails td{
 padding-bottom:3px;
 padding-right:10px;
+}
+
+.logoDisplay{
+margin-bottom:40px;
 }

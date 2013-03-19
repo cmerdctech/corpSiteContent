@@ -1,3 +1,6 @@
+.textStylesCssFileIndicator{color:black;} /*this is here to show which file in browser debug*/
+
+
 .statement{font-weight:bold;color:#666;font-size:105%;}
 
 .highlight{font-weight:bold;color:black;font-size:105%;}
@@ -20,4 +23,5 @@
 
 .annotation{
 font-size:8pt;
+text-align:left;
 }

@@ -12,28 +12,6 @@
 	background: #f2f2f2;
 }
 
-.panelFirstLine {
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-weight: 700;
-	margin-bottom: 30px;
-	font-size: 18pt;
-}
-
-.panelWisecrackBlock {
-	width: 700px;
-}
-
-.panelWisecrack {
-	margin-left: 50px;
-}
-
-.panelLastLine {
-	font-weight: 700;
-	font-style: italic;
-	margin-bottom: 30px;
-	margin-top: 30px;
-	font-size: 18pt;
-}
 
 .anythingSlider-default.activeSlider .anythingControls a {
 	background: #f2f2f2 !important;
@@ -46,3 +24,8 @@
 }
 
 /* Navigation styles are in superGlobal */
+
+.discoveryList{
+font-size:8pt;
+margin:5px 0px 5px 0px;
+}
