@@ -1,3 +1,8 @@
+
+var titleList=$('[title]');
+
+if(typeof(titleList.qtip)=='function'){
+
 $('[title]').qtip({
 	id: 'myTooltip',
 // 	content: {
@@ -16,3 +21,4 @@ $('[title]').qtip({
 		}
 	}
 });
+}
