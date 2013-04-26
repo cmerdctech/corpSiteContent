@@ -1,0 +1,33 @@
+.addToCart{
+padding-top:5px;
+}
+
+.catalogContentContainer{
+border:3pt solid green;padding:20px;
+position:relative;
+}
+
+.catalogContentContainer .storeHeader{
+background:white;margin:10px;height:50px;
+padding:25px 0px 0px 0px;
+position:relative;
+}
+
+.catalogContentContainer .storeHeader .title{
+font-size:150%;
+font-weight:bold;
+}
+
+.viewCartButton{
+display:none;
+}
+
+.productListContainer{
+margin-left:120px;
+}
+
+.shrinkButton10{
+height:10px;
+padding:1px 5px 1px 5px;
+font-size:8pt;
+}

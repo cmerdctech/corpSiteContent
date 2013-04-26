@@ -1,0 +1,60 @@
+.productCategoryContainer{
+overflow:hidden;margin-top:10px;background:white;
+}
+
+
+.productCategoryContainer .sideBar{
+width:150px;height:160px;float:left;background:white;padding-top:48px;
+}
+
+
+.productCategoryContainer .header{
+padding-top:10px;background:white;float:left;width:651px;
+}
+.productCategoryContainer .header .titleText{
+font-weight:bold;font-size:135%;
+}
+
+.productCategoryContainer .productList{
+width:801px;margin:20px 0px 2px 0px;background:white;float:left;
+}
+
+.productCategoryContainer .productList .productListingItemContainer{
+	text-align:left;
+	overflow:hidden;
+	border-top:2pt solid white;
+	background:#BBDBFF;
+	color:#666;
+	padding:0px 0px 0px 30px;
+}
+
+.productCategoryContainer .productList .productListingItemContainer .descriptionContainer{
+float:left;margin:10px 0px 0px 10px;width:80%;
+}
+
+.productCategoryContainer .productList .productListingItemContainer .descriptionContainer .primaryTitle{
+font-weight:bold;font-size:120%;
+}
+
+.productCategoryContainer .productList .productListingItemContainer .descriptionContainer .description{
+margin:10px 0px 10px 30px;
+height:38px;
+overflow:hidden;
+font-size:120%;
+}
+
+.productCategoryContainer .productList .productListingItemContainer .descriptionContainer .description .innerContainer{
+
+}
+
+.productCategoryContainer .productList .productListingItemContainer .descriptionContainer .annotation{
+font-weight:normal;font-size:100%;margin:10px 0px 10px 10px;text-align:left;color:red;
+}
+
+
+.expanded:before{
+content:"Less Info"
+}
+.shrinked:before{
+content:"More Info"
+}
