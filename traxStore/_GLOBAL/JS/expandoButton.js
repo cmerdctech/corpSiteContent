@@ -33,4 +33,4 @@ $('body').widgets_features_expando_button({
 	shrunkButtonClassName:'expanded',
 	expandedButtonClassName:'shrinked',
 	contentSelector:'.innerContainer'
-});
+}).widgets_features_expando_button('showButtonsWithContent');
