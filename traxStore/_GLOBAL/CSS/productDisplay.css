@@ -26,6 +26,7 @@ width:801px;margin:20px 0px 2px 0px;background:white;float:left;
 	background:#BBDBFF;
 	color:#666;
 	padding:0px 0px 0px 30px;
+	position:relative;
 }
 
 .productCategoryContainer .productList .productListingItemContainer .descriptionContainer{
@@ -38,19 +39,33 @@ font-weight:bold;font-size:120%;
 
 .productCategoryContainer .productList .productListingItemContainer .descriptionContainer .description{
 margin:10px 0px 10px 30px;
-height:38px;
+height:1px;
 overflow:hidden;
 font-size:120%;
 }
 
 .productCategoryContainer .productList .productListingItemContainer .descriptionContainer .description .innerContainer{
-
+display:none;
 }
 
 .productCategoryContainer .productList .productListingItemContainer .descriptionContainer .annotation{
 font-weight:normal;font-size:100%;margin:10px 0px 10px 10px;text-align:left;color:red;
 }
 
+
+.shrinkButton10{
+height:10px;
+padding:1px 5px 1px 5px;
+font-size:8pt;
+}
+
+.expandoButtonIdClass{
+display:none;
+position:absolute;
+top:2px;
+right:120px;
+font-weight:normal;
+}
 
 .expanded:before{
 content:"Less Info"
