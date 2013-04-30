@@ -4,7 +4,6 @@
 
 
 .mainContentContainer{
-width:1000px;
 overflow:hidden;
 margin:0 auto;
 }
@@ -19,27 +18,8 @@ margin:0 auto;
 	text-align:left;
 }
 
-.panelFirstLine{
-font-family: 'Open Sans Condensed', sans-serif;
-font-weight:bold;
-margin-bottom:30px;
-font-size:18pt;
-}
-
-.panelWisecrackBlock{
-width:700px;
-}
-
-.panelWisecrack{
-margin-left:50px;
-}
-
-.panelLastLine{
-font-weight:bold;
-font-style:italic;
-margin-bottom:30px;
-margin-top:30px;
-font-size:18pt;
+.pageHeadline{
+margin:15px 0px 15px 0px;
 }
 
 .anythingSlider-default.activeSlider .anythingControls a{
