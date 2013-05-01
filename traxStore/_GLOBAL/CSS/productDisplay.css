@@ -44,8 +44,12 @@ overflow:hidden;
 font-size:120%;
 }
 
+.productCategoryContainer .productList .productListingItemContainer .descriptionContainer .showFirstLine{
+margin:15px 0px 10px 30px;
+height:20px;
+}
 .productCategoryContainer .productList .productListingItemContainer .descriptionContainer .description .innerContainer{
-display:none;
+
 }
 
 .productCategoryContainer .productList .productListingItemContainer .descriptionContainer .annotation{
