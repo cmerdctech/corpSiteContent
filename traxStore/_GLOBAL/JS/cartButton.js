@@ -9,6 +9,6 @@ $('.addToCartButton').click(function(eventObj){
 
 $('.viewCartButton').click(
 	function(){
-		$('.mainContentContainer').widgets_simple_store_main('display', {catalogUrl:'catalog'});
+		$('.mainContentContainer').widgets_simple_store_main('display', {catalogUrl:''});
 	}
 );
