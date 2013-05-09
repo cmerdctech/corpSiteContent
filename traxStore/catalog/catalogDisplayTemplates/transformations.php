@@ -1,16 +1,18 @@
 
 
 $transformations['fancyName']=function($itemRec, $referenceDataTagList){
+	$fieldName='categoryInfo:name'; if (!isset($referenceDataTagList[$fieldName])){return "!isset(\$referenceDataTagList[$fieldName]";}
+
 	$out=isset($itemRec['name'])?'**'.$itemRec['name']."**({$referenceDataTagList['categoryInfo:name']})":"!isset(\$itemRec['name'])"; 
 	return $out;
 };
 $transformations['redemptionUrl']=function($itemRec, $referenceDataTagList){
+	$fieldName='redemption:demoUrl'; if (!isset($referenceDataTagList[$fieldName])){return "!isset(\$referenceDataTagList[$fieldName]";}
+	$fieldName='redemption:productionUrl'; if (!isset($referenceDataTagList[$fieldName])){return "!isset(\$referenceDataTagList[$fieldName]";}
+	$fieldName='provisionServer'; if (!isset($referenceDataTagList[$fieldName])){return "!isset(\$referenceDataTagList[$fieldName]";}
 
-	if (!isset($referenceDataTagList['cardData:cardNumber'])){return "!isset(\$referenceDataTagList['cardData:cardNumber']";}
-	if (!isset($referenceDataTagList['redemption:demoUrl'])){return "!isset(\$referenceDataTagList['redemption:demoUrl']";}
-	if (!isset($referenceDataTagList['redemption:productionUrl'])){return "!isset(\$referenceDataTagList['redemption:productionUrl']";}
 
-	if (str_replace('8882', '', $referenceDataTagList['cardData:cardNumber'])){
+	if ($referenceDataTagList['provisionServer']=='demo'){
 		return $referenceDataTagList['redemption:demoUrl'];
 	}
 	else{
@@ -18,3 +20,18 @@ $transformations['redemptionUrl']=function($itemRec, $referenceDataTagList){
 	}
 
 };
+		
+		$transformations['formattedGrandTotal']=function($itemRec, $referenceDataTagList){
+			$fieldName='priceSummary:grandTotal'; if (!isset($referenceDataTagList[$fieldName])){return "!isset(\$referenceDataTagList[$fieldName]";}
+			return number_format($referenceDataTagList['priceSummary:grandTotal'], 2);
+		};
+		
+		$transformations['formattedTax']=function($itemRec, $referenceDataTagList){
+			$fieldName='priceSummary:tax'; if (!isset($referenceDataTagList[$fieldName])){return "!isset(\$referenceDataTagList[$fieldName]";}
+			return number_format($referenceDataTagList['priceSummary:tax'], 2);
+		};
+		
+		$transformations['formattedSubtotal']=function($itemRec, $referenceDataTagList){
+			$fieldName='priceSummary:subTotal'; if (!isset($referenceDataTagList[$fieldName])){return "!isset(\$referenceDataTagList[$fieldName]";}
+			return number_format($referenceDataTagList['priceSummary:subTotal'], 2);
+		};
