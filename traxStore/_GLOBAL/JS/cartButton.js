@@ -18,6 +18,6 @@ $('.viewCartButton').click(
 		$('.mainContentContainer').widgets_simple_store_main('display', {catalogUrl:''});
 	}
 );
-// 
+
 // $('.mainContentContainer').widgets_simple_store_main('display', {catalogUrl:''});
 // $('body').prepend("<div style='float:right;margin:20px 40px;background:white;padding:10px;color:red;font-size:14pt;'>Jammed straight to checkout for TQ's convenience</div>")
