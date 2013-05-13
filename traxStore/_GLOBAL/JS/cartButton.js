@@ -24,12 +24,12 @@ $('.viewCartButton').click(
 
 
 // 			$('body').widgets_tools_ui_modal_screen({
-// 			employerSender:function(){},
-// 			controls:{
-// 				message:"<img src='../images/debbieWhiteDress.jpg'>",
-// 				version:2,
-// 				backgroundClickFunction:function(){ $(this).hide(); },
-// 			//	fadeParms:{duration:3000},
-// 				messagePosition:'window'
-// 			}
+// 				employerSender:function(){},
+// 				controls:{
+// 					message:"<img src='../images/debbieWhiteDress.jpg'>",
+// 					version:2,
+// 					backgroundClickFunction:function(){ $(this).hide(); },
+// 			//		fadeParms:{duration:3000},
+// 					messagePosition:'window'
+// 				}
 // 			});
