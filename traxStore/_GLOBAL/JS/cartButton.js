@@ -21,3 +21,15 @@ $('.viewCartButton').click(
 
 // $('.mainContentContainer').widgets_simple_store_main('display', {catalogUrl:''});
 // $('body').prepend("<div style='float:right;margin:20px 40px;background:white;padding:10px;color:red;font-size:14pt;'>Jammed straight to checkout for TQ's convenience</div>")
+
+
+// 			$('body').widgets_tools_ui_modal_screen({
+// 			employerSender:function(){},
+// 			controls:{
+// 				message:"<img src='../images/debbieWhiteDress.jpg'>",
+// 				version:2,
+// 				backgroundClickFunction:function(){ $(this).hide(); },
+// 			//	fadeParms:{duration:3000},
+// 				messagePosition:'window'
+// 			}
+// 			});
