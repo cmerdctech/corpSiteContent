@@ -24,6 +24,24 @@ cursor:pointer;
 background:url(../images/goButtonHover.jpg);
 }
 
+.forgotButton{
+background:url(../images/sadFace.png) no-repeat scroll center 0px transparent;
+cursor:pointer;
+}
+
+.forgotButton:hover{
+background:url(../images/happyFace.png) no-repeat scroll center 0px transparent;
+}
+
+.registerButton{
+background:url(../images/goSwooshReady.png) no-repeat scroll center 0px transparent;
+cursor:pointer;
+}
+
+.registerButton:hover{
+background:url(../images/goSwooshHover.png) no-repeat scroll center 0px transparent;
+}
+
 .chalkField{
 color:white;
 font-size:18px;
