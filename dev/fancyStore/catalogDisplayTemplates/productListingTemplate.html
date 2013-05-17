@@ -1,1 +1,17 @@
-hello
+<div class='productListingItemContainer'>
+	<!--img style='float:left;' src='../images/logo.png'-->
+	<div class='descriptionContainer'>
+		<div class='primaryTitle'><!prodCode!> - <b><!name!></b> - <!dollarPrice!><!priceSuffix!></div>
+		<div class='annotation'><!annotation!></div>
+		<div class='description showFirstLine'>
+			<div class='simpleButton shrinkButton15 expandoButtonIdClass shrinked' >&nbsp;</div>
+			<div class='innerContainer '><!description!></div>
+		</div>
+	</div>
+	<input type='hidden' name='quantity' value='1'>
+	<input type='hidden' name='price' value='<!price!>'>
+	<input type='hidden' name='prodCode' value='<!prodCode!>'>
+	<input type='hidden' name='name' value='<!name!>'>
+	<input type='hidden' name='requiresShipping' value='<!requiresShipping!>'>
+	<div class='addToCart simpleButton shrinkButton15 addToCartButton' style='float:right;'>Add to Cart</div>
+</div>
