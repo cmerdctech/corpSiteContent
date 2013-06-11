@@ -1,16 +1,20 @@
 <script>
-steal.then(
-function(){
-$('#featureShow').widgets_display_anythingslider({sliderParms:{
-buildArrows:false,
-buildNavigation:false,
-buildStartStop:false,
-autoPlay:true,
-delay:3000
-}});
+$(document).ready(
 
-}
-);
+function(){
+	steal.then(
+		function(){
+			$('#featureShow').widgets_display_anythingslider({sliderParms:{
+			buildArrows:false,
+			buildNavigation:false,
+			buildStartStop:false,
+			autoPlay:true,
+			delay:3000
+			}});
+		}
+	)
+})
+;
 </script>
 <style>
 .anythingSlider-default{padding:0px;}
