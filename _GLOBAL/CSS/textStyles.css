@@ -29,3 +29,7 @@ text-align:left;
 .footnote{
 font-size:10pt;
 }
+
+.smallCaps{
+	font-size:90%;
+}

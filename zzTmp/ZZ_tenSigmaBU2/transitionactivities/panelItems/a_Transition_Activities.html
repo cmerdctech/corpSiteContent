@@ -1,0 +1,50 @@
+<style>
+#panelList{ height: 940px !important;}
+</style>
+<div id="ActivitiesIntro" style="height:100% !important;">
+<div style="padding: 10px;">
+<h1>Transition Activities</h1>
+<br />
+Based on research from a wide variety of expert sources, TRAX Transition activities are carefully designed to cover the gamut of skills needed for an optimum result at each level of performance. Clearly written activities are easily incorporated into a student's plan using a straightforward system of categories. TRAX Transition activities include lessons, interviews, practice, evaluations, improvement plans and many other tasks. 
+<br /><br />
+<h2>Ten Sigma Transition activities available for</h2>
+<ul class="checkmark">
+	<li>Students with mild disabilities.</li>	
+	<li>Students with moderate disabilities. </li>	
+</ul>
+<br />
+<h2>Activities includes a variety of tools and tasks.</h2>
+<ul class="checkmark">
+	<li>Cover page.</li>	
+	<li>Unit rubric that defines the skill in detail.</li>	
+	<li>Table of contents/unit progress report.</li>	
+	<li>Lesson overviews.</li>	
+	<li>Interviews and observations.</li>	
+	<li>Practice activities.</li>	
+	<li>Evaluations/plans for improvement. </li>	
+	<li>Scenarios and authentic challenges.</li>	
+	<li>Certificates of strength and accomplishment.</li>	
+</ul>
+<br />
+<div style="text-align:center;"> <a href="#" id="activitiesPopUp">
+<img src="images/activities.png" style=" width:75%; margin: 5px 10px;"><br />
+<i>Click here to see Larger Image</i></a></div>
+</div>
+</div>
+<script>
+$('#activitiesPopUp').click(
+function(){
+
+			$('body').widgets_tools_ui_modal_screen({
+				employerSender:function(){},
+				controls:{
+					message:"<img src='images/activities.png' height='500px'>",
+					version:2,
+					backgroundClickFunction:function(){ $(this).hide(); },
+			//		fadeParms:{duration:3000},
+					messagePosition:'window'
+				}
+			});
+
+});
+</script>

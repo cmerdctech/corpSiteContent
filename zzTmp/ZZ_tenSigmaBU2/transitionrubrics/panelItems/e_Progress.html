@@ -1,0 +1,29 @@
+
+<div id="report">
+<div style="width: 585px; padding:15px;">
+<h1>Multiple Year Progress Report</h1>
+<br />
+The Multiple Year Progress Report form tracks everything the IEP team does to help the student meet his/her postsecondary goals. 
+<div style="text-align:center; margin: 0 auto; "><a href="#" id="reportPopUp"><img src="images/progressReport.png" width="530" style="margin: 0 auto; padding: 15px;">
+<br /><i>Click to See Larger Image</i></a></div>
+
+<br />
+</div>
+</div>
+<script>
+$('#reportPopUp').click(
+function(){
+
+			$('body').widgets_tools_ui_modal_screen({
+				employerSender:function(){},
+				controls:{
+					message:"<img src='images/progressReport.png' height='700px'>",
+					version:2,
+					backgroundClickFunction:function(){ $(this).hide(); },
+			//		fadeParms:{duration:3000},
+					messagePosition:'window'
+				}
+			});
+
+});
+</script>

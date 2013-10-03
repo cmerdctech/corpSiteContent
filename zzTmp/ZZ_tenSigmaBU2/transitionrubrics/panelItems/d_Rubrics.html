@@ -1,0 +1,74 @@
+<style>
+#panelList{ height: 750px !important;}
+.zoom_img{
+	top:0;
+	left: 25px;
+	z-index: 0;
+}
+
+.zoom_img:hover {
+	background-color: transparent;
+	z-index: 1000;
+}
+
+.zoom_img span img { 
+    display: inline-block;
+    margin:150px 100px 100px -150px;
+}
+
+.zoom_img span { 
+	top:0;
+    position: absolute;
+    visibility: hidden;
+    color: black;
+    text-decoration: none;
+    -webkit-transform:scale(0.8);
+    -moz-transform:scale(0.8);
+    -o-transform:scale(0.8);
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    opacity: 0.7;
+}
+.zoom_img img:hover
+{
+	top: -100;
+	left: -200px;
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+}
+</style>
+
+<div id="rubrics">
+<div style="width: 585px; padding:15px;">
+<h1>Rubrics</h1>
+<br />
+The manual contains two rubrics for each of the 232 skills.
+<br /> <div style="text-align:center; margin: 0 auto; "><a href="#" id="rubricPopUp"><img src="images/RubricsScales.png" width="500" style="margin: 0 auto; padding: 15px;">
+<!--<span class="zoom_img"><img src="images/RubricsScales.png" width="700" style="text-align:center; padding: 5px;"></span> -->
+<br /><i>Click to See Larger Image</i></a></div>
+<br />The first type of rubric is the Assessment rubric which is used to assess how well the student is able to meet expectations or demonstrate mastery on a skill.  This type of rubric is often used to define the student&#39;s present level for selected skills.  
+<br /><br />The second type of rubric is the Progress rubric.  It is used to document and report progress on a quarterly basis.
+<br />
+</div>
+</div>
+<script>
+$('#rubricPopUp').click(
+function(){
+
+			$('body').widgets_tools_ui_modal_screen({
+				employerSender:function(){},
+				controls:{
+					message:"<img src='images/RubricsScales.png' height='600px'>",
+					version:2,
+					backgroundClickFunction:function(){ $(this).hide(); },
+			//		fadeParms:{duration:3000},
+					messagePosition:'window'
+				}
+			});
+
+});
+</script>
