@@ -46,6 +46,21 @@
 }
 
 
+.learnMoreTextWhite{
+	font-weight:bold;
+	color:#297FFF;
+}
+
+.learnMoreTextWhite a{
+	cursor:pointer;
+	font-size:14pt;
+	background:url(../images/ICON_Link_Device_White_01.png) no-repeat scroll center 5px transparent;
+}
+.learnMoreTextWhite a:hover{
+	background:url(../images/ICON_Link_Device_Silver_01.png) no-repeat scroll center 5px transparent;
+}
+
+
 .downloadPdf{
 	background:url(../images/downloadPdfReady.png) no-repeat scroll center center transparent;
 	width:90px;
