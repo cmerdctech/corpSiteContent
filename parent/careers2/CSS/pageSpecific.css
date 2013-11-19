@@ -1,0 +1,111 @@
+
+.ts_default_pageSpecificFileIndicator{color:black;}
+
+
+#panelContainer{
+	float:left;
+	width:620px;
+	overflow:hidden;
+}
+
+#panelList{
+border: none;
+border-radius: 0px;
+height: 448px;
+width: 620px;
+}
+
+#panelList ul{
+width: 620px; /*needed or the panel doesn't quite fill the width*/
+}
+
+
+.anythingControls a{
+  font-size: 18pt;
+  font-weight:bold;
+  color:white;
+}
+
+
+.anythingControls a:hover{
+  color: #2a7fff
+}
+
+#feature{
+	float:right;
+	width:265px;
+	margin-top:0px;
+	overflow:hidden;
+	font-size:10pt;
+}
+
+.panelItem{
+height:448px;
+}
+
+
+/*inside the panel stuff*/
+
+.panelContents{
+}
+
+.leftSection{
+float:left;
+}
+
+.rightSection{
+float:right;
+}
+
+.panelContents .headline{
+color:#be3c35;
+font-weight:bold;
+margin:20px 0px;
+}
+
+
+.panelContents .sellCopy{
+color:#010188;
+font-weight:normal;
+}
+
+
+.panelContents .linkPhrase{
+color:#be3c35;
+font-weight:bold;
+margin:20px 40px;
+}
+
+.panelContents .linkPhrase a{
+color:#010188;
+font-size:90%;
+}
+
+.panelContents .linkPhrase a:hover{
+color:#010188;
+text-decoration:underline;
+}
+
+
+
+.feature .headline{
+font-size:14pt;
+color:#be3c35;
+font-weight:bold;
+margin:10px 0px;
+}
+
+
+.sellSpot{
+width:98%;text-align:center;border:1pt solid blue;padding-bottom:20px;
+}
+
+.sellSpot .linkPhrase{
+color:#be3c35;
+font-weight:bold;
+font-size:12pt;
+}
+.sellSpot .linkPhrase:hover{
+color:#666;
+font-weight:bold;
+}
