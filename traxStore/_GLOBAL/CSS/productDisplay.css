@@ -30,11 +30,12 @@ width:801px;margin:20px 0px 2px 0px;background:white;float:left;
 }
 
 .productCategoryContainer .productList .productListingItemContainer .descriptionContainer{
-float:left;margin:10px 0px 0px 10px;width:74%;
+float:left;margin:10px 0px 0px 10px;width:80%;
 }
 
 .productCategoryContainer .productList .productListingItemContainer .descriptionContainer .primaryTitle{
 font-weight:bold;font-size:120%;
+width:80%;
 }
 
 .productCategoryContainer .productList .productListingItemContainer .descriptionContainer .description{
