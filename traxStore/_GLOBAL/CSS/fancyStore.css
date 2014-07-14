@@ -10,14 +10,18 @@ position:relative;
 
 .catalogContentContainer .storeHeader{
 background:white;
-height:50px;
-padding:25px 10px 0px 10px;
+height:70px;
+padding:15px 10px 25px 10px;
 position:relative;
 }
 
 .catalogContentContainer .storeHeader .title{
-font-size:150%;
+font-size:180%;
 font-weight:bold;
+}
+
+.catalogContentContainer .storeHeader .title .text{
+margin-bottom:20px;
 }
 
 .viewCartButton{
@@ -26,4 +30,13 @@ display:none;
 
 .productListContainer{
 margin-left:120px;
+}
+
+.navLinks{
+font-weight:normal;
+margin:10px 0px;
+}
+
+.simpleButton{
+padding:0px 10px;
 }
