@@ -10,7 +10,8 @@
 			<div class='innerContainer '><!description!>
 			
 		<div class='annotation'><!annotation!></div>
-		<br/><br/>Product #<!prodCode!>
+		<div id='<!prodCode!>_shippingNote' style='margin-top:20px;font-style:italic;'>hello</div>
+		Product #<!prodCode!>
 		</div>
 		</div>
 	</div>
@@ -21,3 +22,12 @@
 	<input type='hidden' name='requiresShipping' value='<!requiresShipping!>'>
 	<div class='addToCart simpleButton shrinkButton15 addToCartButton' style='float:right;'>Add to Cart</div>
 </div>
+
+		<script>
+			if ("<!requiresShipping!>"){
+				$('#<!prodCode!>_shippingNote').html('Ground shipping (5-7 days) is included. Call us if you need something else.');
+			}
+			else{
+				$('#<!prodCode!>_shippingNote').css('display', 'none');
+			}
+		</script>
