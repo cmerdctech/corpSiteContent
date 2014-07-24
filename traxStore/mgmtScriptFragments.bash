@@ -31,6 +31,9 @@ generateFilesFromData.js --verbose --template all/categoryTemplatesDefaultFiles/
 
 ===============================================
 
+rm -r /Volumes/qubuntuFileServer/cmerdc/corporateMultisite/content/traxStore/behavior/productSpecs/*
+rm -r /Volumes/qubuntuFileServer/cmerdc/corporateMultisite/content/traxStore/transition/productSpecs/*
+
 copyFiles.js -verbose --forReal spreadsheetData/pageCopySpecs.txt all/productSpecs tmp ini
 
 
