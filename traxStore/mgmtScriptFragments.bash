@@ -49,3 +49,25 @@ cd /Volumes/qubuntuFileServer/cmerdc/corporateMultisite/content/
 git status
 
 git commit -am"changed products in store"
+
+
+===============================================
+
+cd /Volumes/qubuntuFileServer/cmerdc/corporateMultisite/content/
+
+rm  traxStore/behavior/catalogDisplayTemplates/*
+rm  traxStore/transition/catalogDisplayTemplates/*
+
+cp  traxStore/all/catalogDisplayTemplates/* traxStore/behavior/catalogDisplayTemplates/
+cp  traxStore/all/catalogDisplayTemplates/* traxStore/transition/catalogDisplayTemplates/ 
+
+
+===============================================
+
+cd /Volumes/qubuntuFileServer/cmerdc/corporateMultisite/content/
+
+rm  traxStore/behavior/categoryTemplatesDefaultFiles/*
+rm  traxStore/transition/categoryTemplatesDefaultFiles/*
+
+cp  traxStore/all/categoryTemplatesDefaultFiles/* traxStore/behavior/categoryTemplatesDefaultFiles/
+cp  traxStore/all/categoryTemplatesDefaultFiles/* traxStore/transition/categoryTemplatesDefaultFiles/ 

@@ -4,7 +4,7 @@
 
 	<!--img style='float:left;' src='../images/TenSigmaLogo.png'-->
 	<div class='descriptionContainer'>
-		<div class='primaryTitle'><b><!name!></b> - <!dollarPrice!><!priceSuffix!></div>
+		<div class='primaryTitle'><b><!name!></b> - <!dollarPrice!> <!priceSuffix!></div>
 		<div class='description showFirstLine'>
 			<div class='simpleButton shrinkButton15 expandoButtonIdClass shrinked' >&nbsp;</div>
 			<div class='innerContainer '><!description!>
@@ -25,7 +25,7 @@
 
 		<script>
 			if ("<!requiresShipping!>"){
-				$('#<!prodCode!>_shippingNote').html('Standard  7-10 Day Shipping Included. Interested in Upgrading shipping call 888-876-6125 ext. 0.');
+				$('#<!prodCode!>_shippingNote').html('Standard  7-10 Day Shipping Included.<br/>To upgrade shipping call 888-876-6125 ext. 0.<br/><br/>');
 			}
 			else{
 				$('#<!prodCode!>_shippingNote').css('display', 'none');
