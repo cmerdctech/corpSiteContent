@@ -6,15 +6,3 @@ position:relative;height:400px;width:854px;background:white;
 float:left;
 margin:50px 67px;
 }
-
-.footer{
-position:absolute;bottom:15px;left:15px;height:75px;width:824px;border:1pt solid #944;
-}
-
-.footer .text{
-color:#944;width:650px;font-size:10pt;position:absolute;left:40px;top:20px;
-}
-
-.storeFrontPageButton{
-margin:10px auto;position:absolute;right:40px;top:0px;
-}
