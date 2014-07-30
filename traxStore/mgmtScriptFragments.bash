@@ -2,6 +2,7 @@
 
 
 ===============================================
+GENERATE PRODUCT PARAMETER FILES
 
 cd /Volumes/qubuntuFileServer/cmerdc/corporateMultisite/content/traxStore
 
@@ -14,20 +15,8 @@ generateFilesFromData.js --forReal --verbose spreadsheetData/productSpecs.txt al
 
 
 
-
 ===============================================
-
-cd /Volumes/qubuntuFileServer/cmerdc/corporateMultisite/content/traxStore
-
-generateFilesFromData.js --forReal --verbose --template all/categoryTemplatesDefaultFiles/categorySubstitutionTemplate.html spreadsheetData/categoryTemplateData.txt all/categoryTemplates html
-generateFilesFromData.js --forReal --verbose --template all/categoryTemplatesDefaultFiles/categorySubstitutionTemplate.html spreadsheetData/categoryTemplateData.txt behavior/categoryTemplates html
-generateFilesFromData.js --forReal --verbose --template all/categoryTemplatesDefaultFiles/categorySubstitutionTemplate.html spreadsheetData/categoryTemplateData.txt transition/categoryTemplates html
-
-
-//generateFilesFromData.js --verbose --template all/categoryTemplatesDefaultFiles/categorySubstitutionTemplate.html spreadsheetData/categoryTemplateData.txt all/categoryTemplates html
-
-
-===============================================
+COPY PRODUCT PARAMETER FILES TO ADDITIONAL DEPARTMENTS
 
 cd /Volumes/qubuntuFileServer/cmerdc/corporateMultisite/content/traxStore
 
@@ -42,7 +31,22 @@ mv tmp/TransitionProducts/* transition/productSpecs/
 
 //copyFiles.js -verbose spreadsheetData/pageCopySpecs.txt all/productSpecs tmp ini
 
+
 ===============================================
+GENERATE CATEGORY TEMPLATES
+
+cd /Volumes/qubuntuFileServer/cmerdc/corporateMultisite/content/traxStore
+
+generateFilesFromData.js --forReal --verbose --template all/categoryTemplatesDefaultFiles/categorySubstitutionTemplate.html spreadsheetData/categoryTemplateData.txt all/categoryTemplates html
+generateFilesFromData.js --forReal --verbose --template all/categoryTemplatesDefaultFiles/categorySubstitutionTemplate.html spreadsheetData/categoryTemplateData.txt behavior/categoryTemplates html
+generateFilesFromData.js --forReal --verbose --template all/categoryTemplatesDefaultFiles/categorySubstitutionTemplate.html spreadsheetData/categoryTemplateData.txt transition/categoryTemplates html
+
+
+//generateFilesFromData.js --verbose --template all/categoryTemplatesDefaultFiles/categorySubstitutionTemplate.html spreadsheetData/categoryTemplateData.txt all/categoryTemplates html
+
+
+===============================================
+GIT CONTROL
 
 cd /Volumes/qubuntuFileServer/cmerdc/corporateMultisite/content/
 
@@ -60,6 +64,8 @@ rm  traxStore/transition/catalogDisplayTemplates/*
 
 cp  traxStore/all/catalogDisplayTemplates/* traxStore/behavior/catalogDisplayTemplates/
 cp  traxStore/all/catalogDisplayTemplates/* traxStore/transition/catalogDisplayTemplates/ 
+
+echo "REMEMBER TO CHANGE TITLES IN BEHAVIOR AND TRANSTION. THIS MADE IT SAY 'ALL'"
 
 
 ===============================================
