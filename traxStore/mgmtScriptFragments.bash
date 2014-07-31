@@ -15,8 +15,8 @@ generateFilesFromData.js --forReal --verbose spreadsheetData/productSpecs.txt al
 
 
 
-===============================================
-COPY PRODUCT PARAMETER FILES TO ADDITIONAL DEPARTMENTS
+//===============================================
+//COPY PRODUCT PARAMETER FILES TO ADDITIONAL DEPARTMENTS
 
 cd /Volumes/qubuntuFileServer/cmerdc/corporateMultisite/content/traxStore
 
