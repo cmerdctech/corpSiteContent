@@ -11,12 +11,12 @@ rm -r /Volumes/qubuntuFileServer/cmerdc/corporateMultisite/content/traxStore/all
 generateFilesFromData.js --forReal --verbose spreadsheetData/productSpecs.txt all/productSpecs ini
 
 
-//generateFilesFromData.js --verbose spreadsheetData/productSpecs.txt all/productSpecs ini
+#generateFilesFromData.js --verbose spreadsheetData/productSpecs.txt all/productSpecs ini
 
 
 
-//===============================================
-//COPY PRODUCT PARAMETER FILES TO ADDITIONAL DEPARTMENTS
+#===============================================
+#COPY PRODUCT PARAMETER FILES TO ADDITIONAL DEPARTMENTS
 
 cd /Volumes/qubuntuFileServer/cmerdc/corporateMultisite/content/traxStore
 
@@ -29,7 +29,18 @@ mv tmp/BehaviorProducts/* behavior/productSpecs/
 mv tmp/TransitionProducts/* transition/productSpecs/
 
 
-//copyFiles.js -verbose spreadsheetData/pageCopySpecs.txt all/productSpecs tmp ini
+#copyFiles.js -verbose spreadsheetData/pageCopySpecs.txt all/productSpecs tmp ini
+
+
+#===============================================
+#GIT CONTROL
+
+cd /Volumes/qubuntuFileServer/cmerdc/corporateMultisite/content/
+
+git status
+
+git commit -am"changed products in store"
+
 
 
 ===============================================
