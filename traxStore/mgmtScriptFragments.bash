@@ -1,5 +1,9 @@
 
-
+#paste spreadsheet data into these files
+#
+#spreadsheetData/productSpecs.txt all/productSpecs
+#spreadsheetData/pageCopySpecs.txt
+#spreadsheetData/categoryTemplateData.txt
 
 ===============================================
 GENERATE PRODUCT PARAMETER FILES
