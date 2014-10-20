@@ -43,6 +43,8 @@ cd /Volumes/qubuntuFileServer/cmerdc/corporateMultisite/content/
 
 git status
 
+git add --all .
+
 git commit -am"changed products in store"
 
 
