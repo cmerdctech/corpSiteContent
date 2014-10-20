@@ -41,3 +41,8 @@ Behavior Products	bk_326
 Behavior Products	bl_353
 Behavior Products	bm_1141
 Behavior Products	bn_1143
+Promotion	ca_1017
+Promotion	cb_1018
+Promotion	cc_1019
+Promotion	az_1046
+Promotion	cd_1047

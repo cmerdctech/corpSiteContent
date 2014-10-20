@@ -32,6 +32,9 @@ rm -r /Volumes/qubuntuFileServer/cmerdc/corporateMultisite/content/traxStore/tra
 mv tmp/BehaviorProducts/* behavior/productSpecs/
 mv tmp/TransitionProducts/* transition/productSpecs/
 
+### rm -r /Volumes/qubuntuFileServer/cmerdc/corporateMultisite/content/traxStore/promotion/productSpecs/*
+### mv tmp/Promotion/* promotion/productSpecs/
+
 
 #copyFiles.js -verbose spreadsheetData/pageCopySpecs.txt all/productSpecs tmp ini
 
