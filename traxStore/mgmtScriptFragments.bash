@@ -50,6 +50,8 @@ git add --all .
 
 git commit -am"changed products in store"
 
+git push
+
 
 
 ===============================================
