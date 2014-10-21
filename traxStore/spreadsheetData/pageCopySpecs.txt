@@ -22,11 +22,11 @@ Transition Products	au_1043
 Transition Products	av_610
 Transition Products	aw_620
 Transition Products	ax_675
-Transition Products	az_1046
+Transition Products	cd_1046
 Transition Products	ca_1017
 Transition Products	cb_1018
 Transition Products	cc_1019
-Transition Products	cd_1047
+Transition Products	ce_1047
 Behavior Products	ba_1051
 Behavior Products	bb_1073
 Behavior Products	bc_1074
@@ -41,8 +41,8 @@ Behavior Products	bk_326
 Behavior Products	bl_353
 Behavior Products	bm_1141
 Behavior Products	bn_1143
+Promotion	cd_1046
 Promotion	ca_1017
 Promotion	cb_1018
 Promotion	cc_1019
-Promotion	az_1046
-Promotion	cd_1047
+Promotion	ce_1047
