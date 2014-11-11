@@ -1,0 +1,33 @@
+<div class='productListingItemContainer' id='<!prodCode!>'>
+
+
+
+	<!--img style='float:left;' src='../images/TenSigmaLogo.png'-->
+	<div class='descriptionContainer'>
+		<div class='primaryTitle'><b><!name!></b> - <!dollarPrice!> <!priceSuffix!></div>
+		<div class='description showFirstLine'>
+			<div class='simpleButton shrinkButton15 expandoButtonIdClass shrinked' >&nbsp;</div>
+			<div class='innerContainer '><!description!>
+			
+		<div class='annotation'><!annotation!></div>
+		<div id='<!prodCode!>_shippingNote' style='margin-top:20px;font-style:italic;'>hello</div>
+		Product #<!prodCode!>
+		</div>
+		</div>
+	</div>
+	<input type='hidden' name='quantity' value='1'>
+	<input type='hidden' name='price' value='<!price!>'>
+	<input type='hidden' name='prodCode' value='<!prodCode!>'>
+	<input type='hidden' name='name' value='<!name!>'>
+	<input type='hidden' name='requiresShipping' value='<!requiresShipping!>'>
+	<div class='addToCart simpleButton shrinkButton15 addToCartButton' style='float:right;'>Add to Cart</div>
+</div>
+
+		<script>
+			if ("<!requiresShipping!>"){
+				$('#<!prodCode!>_shippingNote').html('Standard  7-10 Day Shipping Included.<br/>To upgrade shipping call 888-876-6125 ext. 0.<br/><br/>');
+			}
+			else{
+				$('#<!prodCode!>_shippingNote').css('display', 'none');
+			}
+		</script>
