@@ -35,6 +35,18 @@ color:blue;
 padding-left:20px;
 }
 
+.tech1 a{
+color:blue;
+font-size:14px;
+text-decoration:underline;
+padding-left:20px;
+}
+.tech1 a:hover{
+color:blue;
+font-size:14px;
+text-decoration:underline;
+padding-left:20px;
+}
 
 
 .pageHeadline{
