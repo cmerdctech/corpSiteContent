@@ -1,0 +1,75 @@
+<?php
+
+if (APPLICATION_ENV=='production' && isset($this->contentArray['analytics.js']) && $this->contentArray['analytics.js']){
+	$analyticsString="<script type='text/javascript'>{$this->contentArray['analytics.js']}</script>";
+}
+else{
+	$analyticsString='';
+}
+
+$headStyle=$this->headStyle();
+$route=Zend_Controller_Front::getInstance()->getRouter()->getCurrentRoute()->getDefaults();
+
+$title=$this->headTitle();
+if (isset($route['title'])){
+	$title="<TITLE>{$route['title']}</TITLE>";
+}
+
+$this->applyStyles($this, $this->contentArray, array('skipSuperGlobal'=>true));
+$headStyle=$this->headStyle();
+$javascript=$this->headScript();
+$contentArray=$this->contentArray;
+$viewContent=$this->layout()->content;
+
+//$headNav=$this->render('default/foundationComponents/base-head-nav.phtml');
+$headNav="<div>hello</div>";
+
+
+$additionalJsLibItems=$this->javascriptCalls();
+
+$layoutJavascript="
+
+// $('#scroll1Container').slick({
+//   dots: true,
+//   infinite: true,
+//   speed: 300,
+//   adaptiveHeight: true,
+//   autoplay:false,
+//   arrows:true,
+//   appendArrows:$('#scroll1NavContainer'),
+//   fade:true
+// });
+";
+
+$userJavascript="";
+
+$outputString="<!doctype html>
+<html class='no-js' lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    $title
+    $headStyle
+
+  </head>
+  <body>   
+  
+$headNav
+$viewContent
+
+<!-- ================================================== -->    
+    <script src='js/vendor/jquery.js'></script>
+    $additionalJsLibItems
+    <script>
+	$(document).ready(function(){
+		$layoutJavascript
+		$userJavascript
+	});
+    </script>
+  </body>
+</html>";
+
+$outputString=$this->translateUrls($outputString);
+$outputString=$this->applyAllMacros($this->contentArray, $outputString);
+$outputString=$this->mapServableToHash($this->contentArray, $outputString);
+echo $outputString;

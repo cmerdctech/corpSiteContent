@@ -1,0 +1,49 @@
+
+
+
+h2
+{
+position:absolute;
+color:pink;
+font-size:5vw;
+}
+
+
+.scroll1 img{
+	height:100%;
+	width:100%;
+}
+
+.scroll1 .headTitle{
+	position:absolute;
+	top:10%;
+	left:10%;
+	font-size:200%;
+	font-weight:bold;
+	color:pink;
+}
+
+
+
+.slick-prev{
+	left:100px;
+}
+.slick-prev{
+	right:100px;
+}
+
+h1{
+	font-size:100%;
+	font-weight:normal;
+}
+.prominent{
+position:absolute;
+}
+
+.highlightOverlay {
+  background: rgba(255,255,255,.6) none repeat scroll 0 0;
+  font-size: 3vw;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}

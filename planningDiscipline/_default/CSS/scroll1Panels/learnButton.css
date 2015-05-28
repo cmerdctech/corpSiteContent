@@ -1,0 +1,62 @@
+
+@media only screen {
+.learnButton{
+top:1%;
+right:5%;
+
+position:absolute;
+font-size:80%;
+}
+} /* Define mobile styles */
+
+@media only screen and (min-width: 30.063em) {
+.learnButton{
+top:1%;
+right:5%;
+
+position:absolute;
+font-size:100%;
+}
+} /* min-width 641px, phone-size screens */
+
+@media only screen and (min-width: 40.063em) {
+.learnButton{
+top:1%;
+right:5%;
+
+position:absolute;
+font-size:150%;
+}
+} /* min-width 641px, medium screens */
+
+
+@media only screen and (min-width: 64.063em) {
+.learnButton{
+top:30%;
+right:1%;
+
+position:absolute;
+font-size:200%;
+}
+} /* min-width 1025px, large screens */
+
+@media only screen and (min-width: 90.063em) {
+.learnButton{
+top:30%;
+right:1%;
+
+position:absolute;
+font-size:250%;
+}
+} /* min-width 1441px, xlarge screens */
+
+@media only screen and (min-width: 120.063em) {
+.learnButton{
+top:30%;
+right:1%;
+
+position:absolute;
+font-size:300%;
+}
+} /* min-width 1921px, xxlarge screens */
+
