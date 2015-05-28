@@ -45,6 +45,7 @@
 
 	$(window).resize(function(event) {
 		event.stopPropagation();
+		
 		var newSize = {
 			height: $(window).height(),
 			width: $(window).width()
@@ -69,5 +70,7 @@
 			height: $(window).height(),
 			width: $(window).width()
 		});
+	
+		$('.indicator').html("h: "+$(window).height()+", w: "+$(window).width());
 
 })(jQuery)
