@@ -71,6 +71,6 @@
 			width: $(window).width()
 		});
 	
-		$('.indicator').html("h: "+$(window).height()+", w: "+$(window).width());
+		$('body').prepend("h: "+$(window).height()+", w: "+$(window).width());
 
 })(jQuery)
