@@ -8,10 +8,10 @@
 }
 
 .featurePanelResponsiveTiny{
-	padding:3pt 5pt;
-	margin:5pt auto;
+	padding:.3em .5em;
+	margin:.5em auto;
 	width:90%;
-	border:1pt solid black;
-	border-radius: 3pt; /* CSS3 */
+	border:.2em solid black;
+	border-radius: .3em; /* CSS3 */
 	background:#69f;
 }

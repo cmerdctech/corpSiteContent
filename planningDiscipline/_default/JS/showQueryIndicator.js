@@ -1,0 +1,1 @@
+$('body').append("<div class='indicatorPlus'>HELLO</div><div class='indicatorMinus'>HELLO</div>");

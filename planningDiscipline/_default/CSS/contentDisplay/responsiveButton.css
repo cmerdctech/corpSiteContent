@@ -11,10 +11,10 @@
 	
 	margin:1vw;
 	
-	border-top-width:2pt;
-	border-right-width:2pt;
-	border-bottom-width:2pt;
-	border-left-width:2pt;
+	border-top-width:.2em;
+	border-right-width:.2em;
+	border-bottom-width:.2em;
+	border-left-width:.2em;
 	
 	border-top-color:#444;
 	border-right-color:#444;
@@ -38,9 +38,5 @@
 	background:#f2f2f2;
 	color:#666;
 /*outline:3pt solid rgba(255,255,255,.7);*/
-	border-radius: 10px; /* CSS3 */
-}
-
-.responsiveButtonTiny{
-	margin-right:15px;
+	border-radius: 1em; /* CSS3 */
 }

@@ -1,18 +1,13 @@
 (function($) {
 
 	var scroller = $('#scroll1Container'),
-		isSlick = false,
-		hideForSmall = $('.hideForSmall'),
-		featureTopic = $('.featureTopic'),
-		featurePanel = $('.featurePanel');
+		isSlick = false;
 
 	var initSlick = function() {
 		if (isSlick) {
 			return;
 		}
-		featureTopic.removeClass('featureTopicTiny');
-		featurePanel.removeClass('featurePanelResponsiveTiny');
-		hideForSmall.show();
+		console.log('initing slick');
 		scroller.slick({
 			dots: true,
 			infinite: true,
@@ -31,9 +26,6 @@
 			return;
 		}
 		scroller.slick('unslick');
-		hideForSmall.hide();
-		featureTopic.addClass('featureTopicTiny');
-		featurePanel.addClass('featurePanelResponsiveTiny');
 		isSlick = false;
 	}
 
@@ -58,7 +50,7 @@
 	});
 
 	var updateSlick=function(newSize) {
-		if (newSize.width < 800) {
+		if (newSize.width < 750) {
 			killSlick();
 		} else {
 			initSlick()
@@ -71,6 +63,4 @@
 			width: $(window).width()
 		});
 	
-		$('body').prepend("h: "+$(window).height()+", w: "+$(window).width());
-
 })(jQuery)

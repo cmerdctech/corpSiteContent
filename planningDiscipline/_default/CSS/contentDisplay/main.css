@@ -1,7 +1,6 @@
 
 html {
 	font-family:sans-serif;
-	font-size:100%;
 }
 
 h1{
@@ -28,75 +27,3 @@ h5{
 	font-size:1em;
 	font-size:1rem;
 }
-
-@media only screen {
-.indicator:before {
-	position:absolute;
-	top:2%;
-	right:2%;
-	background:#999;
-	padding:3px;
-	content:'default'
-}
-}
-
-@media only screen and (min-width: 30.063em) {
-.indicator:before {
-	position:absolute;
-	top:2%;
-	right:2%;
-	background:#999;
-	padding:3px;
-	content:'phone-size'
-}
-} /* min-width 641px, phone-size screens */
-
-/* Define mobile styles */
-@media only screen and (min-width: 40.063em) {
-.indicator:before {
-	position:absolute;
-	top:2%;
-	right:2%;
-	background:#999;
-	padding:3px;
-	content:'medium screens'
-}
-}
-
-/* min-width 641px, medium screens */
-@media only screen and (min-width: 64.063em) {
-.indicator:before {
-	position:absolute;
-	top:2%;
-	right:2%;
-	background:#999;
-	padding:3px;
-	content:'large screens'
-}
-}
-
-/* min-width 1025px, large screens */
-@media only screen and (min-width: 90.063em) {
-.indicator:before {
-	position:absolute;
-	top:2%;
-	right:2%;
-	background:#999;
-	padding:3px;
-	content:'xlarge screens'
-}
-}
-
-/* min-width 1441px, xlarge screens */
-@media only screen and (min-width: 120.063em) {
-.indicator:before {
-	position:absolute;
-	top:2%;
-	right:2%;
-	background:#999;
-	padding:3px;
-	content:'xxlarge screens'
-}
-}
-
-/* min-width 1921px, xxlarge screens */
