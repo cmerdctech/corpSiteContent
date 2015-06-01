@@ -7,7 +7,7 @@
   	
 	text-align:center;
 	
-	padding:1vw;
+	padding:.5vw 1vw;
 	
 	margin:1vw;
 	
@@ -25,6 +25,8 @@
 	border-right-style:solid;
 	border-bottom-style:solid;
 	border-left-style:solid;
+	
+	display:block;
 	
 	
 	border-radius: 6px; /* CSS3 */

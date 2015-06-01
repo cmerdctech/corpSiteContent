@@ -4,7 +4,7 @@
 h2
 {
 position:absolute;
-color:pink;
+color:white;
 font-size:5vw;
 }
 
@@ -46,4 +46,11 @@ position:absolute;
   position: absolute;
   text-align: center;
   width: 100%;
+  font-weight:bold;
+}
+
+.buttonAnnotation{
+font-size:70%;
+margin-bottom:-18px;
+font-weight:normal;
 }
