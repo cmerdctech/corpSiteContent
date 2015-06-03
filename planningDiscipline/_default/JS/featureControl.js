@@ -32,7 +32,6 @@
 	//$('#myAlert').foundation({alert: {speed: 3000}});
 	var resizeFunctionList = [];
 
-
 	$(window).resize(function(event) {
 		event.stopPropagation();
 		
@@ -40,6 +39,9 @@
 			height: $(window).height(),
 			width: $(window).width()
 		};
+
+$('#sizes').html("w: "+newSize.width+", h: "+newSize.height);	
+
 		for (var i = 0, len = resizeFunctionList.length; i < len; i++) {
 			var element = resizeFunctionList[i];
 			element(newSize);
@@ -62,3 +64,5 @@
 		});
 	
 })(jQuery);
+
+$('body').prepend("<div id='sizes'></div>");
