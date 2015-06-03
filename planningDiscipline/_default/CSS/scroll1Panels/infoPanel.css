@@ -1,0 +1,16 @@
+.infoPanel{
+position:relative;
+}
+
+.infoTopic{
+color:black;
+font-height:15vw;
+}
+
+.vague{
+	display:none
+}
+
+.opaque{
+	display:block;
+}

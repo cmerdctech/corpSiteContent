@@ -1,0 +1,11 @@
+
+
+.featureTopic{
+font-weight:bold;
+}
+
+.featureTopicTiny{
+	position:static;
+	font-size:4vw;
+	color:white;
+}
