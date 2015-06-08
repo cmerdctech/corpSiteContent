@@ -8,7 +8,7 @@
 			return;
 		}
 		scroller.slick({
-		//	dots: true,
+			dots: true,
 			infinite: true,
 			speed: 300,
 			autoplay: false,
@@ -40,7 +40,7 @@
 			width: $(window).width()
 		};
 
-//$('#sizes').html("w: "+newSize.width+", h: "+newSize.height);	
+$('#sizes').html("w: "+newSize.width+", h: "+newSize.height);	
 
 		for (var i = 0, len = resizeFunctionList.length; i < len; i++) {
 			var element = resizeFunctionList[i];
@@ -65,4 +65,4 @@
 	
 })(jQuery);
 
-//$('body').prepend("<div id='sizes'></div>");
+$('body').prepend("<div id='sizes'></div>");

@@ -26,9 +26,19 @@ ul{
 font-size:100%;
 }
 
+.slick-prev{
+	left:100px;
+}
+.slick-prev{
+	right:100px;
+}
+
 h1{
 	font-size:100%;
 	font-weight:normal;
+}
+.prominent{
+position:absolute;
 }
 
 .highlightOverlay {
