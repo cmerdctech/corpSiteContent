@@ -1,0 +1,20 @@
+.centerContents{
+display:flex;
+-webkit-justify-content:center;
+justify-content:center;
+-webkit-align-items:center;
+align-items:center;
+flex-direction:row;
+-webkit-flex-direction: row;
+}
+
+.shadowBorder{
+	border:1pt solid gray;
+	
+  -moz-border-radius: 4px; /* Firefox */
+  -webkit-border-radius: 4px; /* Safari, Chrome */
+  border-radius: 4px; /* CSS3 */
+	-webkit-box-shadow:2px 3px 5px rgba(0, 0, 0, .5);
+	   -moz-box-shadow:2px 3px 5px rgba(0, 0, 0, .5);
+	        box-shadow:2px 3px 5px rgba(0, 0, 0, .5);
+}
