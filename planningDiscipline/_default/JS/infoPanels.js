@@ -1,5 +1,7 @@
 (function($) {
 
+//$('#info1Container').fidgets_control_vertical_structure({});
+
 	var animate = function(eventObj) {
 		var target = $(eventObj.target);
 		target.find('.mobile').addClass('animated slideInRight')
