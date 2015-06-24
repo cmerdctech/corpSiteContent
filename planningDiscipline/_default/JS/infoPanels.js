@@ -1,6 +1,9 @@
 (function($) {
 
-//$('#info1Container').fidgets_control_vertical_structure({});
+/*
+NOTE: fidgets_control_vertical_structure is instantiated in featureControl because it 
+needs to be coordinated to not do bookmarks before the carousel panel is set up
+*/
 
 	var animate = function(eventObj) {
 		var target = $(eventObj.target);
