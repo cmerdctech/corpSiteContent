@@ -8,7 +8,19 @@ font-size:5vw;
 }
 
 
+.scroll1 img{
+	height:100%;
+	width:100%;
+}
 
+.scroll1 .headTitle{
+	position:absolute;
+	top:10%;
+	left:10%;
+	font-size:200%;
+	font-weight:bold;
+	color:pink;
+}
 
 ul{
 font-size:100%;
@@ -26,4 +38,10 @@ h1{
   text-align: center;
   width: 100%;
   font-weight:bold;
+}
+
+.buttonAnnotation{
+font-size:70%;
+margin-bottom:-18px;
+font-weight:normal;
 }
