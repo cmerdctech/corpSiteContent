@@ -1,5 +1,6 @@
 (function($) {
 
+
 	var scroller = $('#scroll1Container'),
 		isSlick = false;
 
@@ -7,7 +8,7 @@
 		//'init' is a slick scroller event from feature panel
 		setTimeout(function() {
 			$('#info1Container').fidgets_control_vertical_structure({
-				defaultPanelId: 'introduction'
+			defaultPanelId:'introduction'
 			});
 		}, 1000); //for some reason, the init event fires about a second before the size of the panel is adjusted
 	});
@@ -18,36 +19,10 @@
 		}
 
 		scroller.fidgets_control_slick_carousel({
-			startup: [
-				{
-					selector:'.featureOverlay',
-					pluginName: 'fidgets_control_feature_overlay',
-					parameters: {}
-				}
-			],
-			onShow: [
-				{
-					selector:'.featureOverlay',
-					pluginName: 'fidgets_control_feature_overlay',
-					parameters: {
-						delay: 1000,
-						speed: 500
-					}
-				}
-			],
-			onHide: [
-				{
-					selector:'.featureOverlay',
-					pluginName: 'fidgets_control_feature_overlay',
-					parameters: {
-						action:'hide'
-					}
-				}
-			],
 			slickParms: {
 				dots: true,
 				infinite: true,
-				speed: 2000,
+				speed: 300,
 				autoplay: false,
 				arrows: true,
 				appendArrows: $('#introduction'),
@@ -101,4 +76,3 @@
 
 
 })(jQuery);
-

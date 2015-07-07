@@ -18,3 +18,7 @@ font-height:15vw;
 .opaque{
 	display:block;
 }
+
+.insidePage{
+	padding-top:50px;
+}
