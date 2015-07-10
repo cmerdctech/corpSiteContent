@@ -45,14 +45,9 @@
 				}
 			],
 			slickParms: {
-				dots: true,
-				infinite: true,
-				speed: 2000,
-				autoplay: false,
 				arrows: true,
-				appendArrows: $('#introduction'),
-				fade: true,
-				mobileFirst: true
+				speed: 2000,
+				autoplay: true
 			}
 		});
 
