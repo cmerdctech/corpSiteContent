@@ -1,0 +1,12 @@
+body{
+padding:0% 20%;
+}
+
+a{
+color:green;
+}
+
+a:hover{
+background:#ccc;
+color:white;
+}
