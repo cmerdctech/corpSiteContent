@@ -23,16 +23,6 @@
 					selector:'.featureOverlay',
 					pluginName: 'fidgets_control_feature_overlay',
 					parameters: {}
-				},
-				function(inx, panelItemList){
-					if (inx===0){
-						$('.firstOne').fidgets_control_feature_overlay({
-						delay: 1000,
-						speed: 500
-					});
-
-
-					}
 				}
 			],
 			onShow: [
