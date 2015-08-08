@@ -57,7 +57,7 @@
 			slickParms: {
 				arrows: true,
 				speed: 2000,
-				autoplay: true,
+				autoplay: false,
 				fade:false
 			}
 		});
