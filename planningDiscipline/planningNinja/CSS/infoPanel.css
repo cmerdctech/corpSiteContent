@@ -1,0 +1,24 @@
+/*
+Remember, .infoPanel refers to files in _mediaQueries, too
+*/
+
+.infoPanel{
+position:relative;
+}
+
+.infoTopic{
+color:black;
+font-height:15vw;
+}
+
+.vague{
+	display:none
+}
+
+.opaque{
+	display:block;
+}
+
+.insidePage{
+	padding-top:50px;
+}
