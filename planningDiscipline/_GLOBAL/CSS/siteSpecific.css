@@ -11,30 +11,3 @@ background:transparent;
 
 }
 
-
-.slick-next{
-color:white;
-background:#666;
-}
-.slick-prev{
-color:white;
-background:#666;
-}
-.slick-next:hover{
-color:white;
-background:#222;
-}
-.slick-prev:hover{
-color:white;
-background:#222;
-}
-
-#scroll1Container{
-
-height:90vh;
-
--webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.33);
--moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.33);
-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.33);
-
-}

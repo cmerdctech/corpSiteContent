@@ -56,7 +56,7 @@
 			],
 			slickParms: {
 				arrows: true,
-				speed: 4000,
+				speed: 2000,
 				autoplay: false,
 				fade:false
 			}

@@ -1,0 +1,13 @@
+
+.slick-prev::before, .slick-next::before{
+color:black;
+}
+
+.slick-next:hover{
+color:white;
+background:#ddd;
+}
+.slick-prev:hover{
+color:white;
+background:#ddd;
+}
