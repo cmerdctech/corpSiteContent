@@ -6,11 +6,15 @@ var infos=$('.infoPanel');
 
 var featureFunction=function(event){
 var content=$(this).find('.explanationContainer');
+$('.explanationContainer').hide();
+$('.infoContainer').hide();
 content.toggle().css('cursor', 'pointer');
 }
 
 var infoFunction=function(event){
 var content=$(this).find('.infoContainer');
+$('.explanationContainer').hide();
+$('.infoContainer').hide();
 content.toggle().css('cursor', 'pointer');
 }
 
