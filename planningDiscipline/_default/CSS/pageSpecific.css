@@ -11,3 +11,12 @@ background:#ddd;
 color:white;
 background:#ddd;
 }
+
+.example .title{
+color:#b800a1;
+text-align:center;
+}
+
+.infoBgcolorBlue{
+background:rgb(227, 237, 251);
+}

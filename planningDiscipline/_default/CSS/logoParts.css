@@ -1,5 +1,13 @@
+/*these are assembled by mediaQueries/logo*/
 
-
+.logo{
+	display:-webkit-flex;
+	display:flex;
+	flex-direction:row;
+	width:-moz-fit-content;
+	width:-webkit-fit-content;
+	}
+	
 .planName{
 color:#3270cc;
 }
