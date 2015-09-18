@@ -9,14 +9,19 @@ if (windowWidth < 750) {
 
 		var isHidden = (content.css('display') == 'none');
 		
-		var closureIndicator=function (event){ console.log('fadeOut'); console.log(this); indicatorFunction($(this).parent(), contentSelector)};
+		var closureIndicator=function (event){ 
+		$(this).parent().bullseye({
+						offsetTop: 20
+					});
+					
+		indicatorFunction($(this).parent(), contentSelector)};
 		
 		if (isHidden) {
-			$('.explanationContainer').fadeOut(500);
-			$('.infoContainer').fadeOut(500);
-			content.fadeIn(1000, closureIndicator);
+			$('.explanationContainer').hide(500);
+			$('.infoContainer').hide(500);
+			content.show(1000, closureIndicator);
 		} else {
-			content.fadeOut(1000, closureIndicator);
+			content.hide(1000, closureIndicator);
 		}
 	}
 	
