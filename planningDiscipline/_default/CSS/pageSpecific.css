@@ -20,3 +20,17 @@ text-align:center;
 .infoBgcolorBlue{
 background:rgb(227, 237, 251);
 }
+
+.more{
+color:gray;
+}
+.more:hover{
+color:black;
+}
+
+.less{
+color:gray;
+}
+.less:hover{
+color:black;
+}

@@ -1,24 +1,63 @@
-var windowWidth=$(window).width();
-if (windowWidth <750){
+var windowWidth = $(window).width();
+if (windowWidth < 750) {
 
-var features=$('.featurePanel');
-var infos=$('.infoPanel');
+	var features = $('.featurePanel');
+	var infos = $('.infoPanel');
+	
+	var visibilityFunction=function(event, target, contentSelector) {
+		var content = $(target).find(contentSelector);
 
-var featureFunction=function(event){
-var content=$(this).find('.explanationContainer');
-$('.explanationContainer').hide();
-$('.infoContainer').hide();
-content.toggle(1000);
-}
+		var isHidden = (content.css('display') == 'none');
+		
+		var closureIndicator=function (event){ console.log('fadeOut'); console.log(this); indicatorFunction($(this).parent(), contentSelector)};
+		
+		if (isHidden) {
+			$('.explanationContainer').fadeOut(500);
+			$('.infoContainer').fadeOut(500);
+			content.fadeIn(1000, closureIndicator);
+		} else {
+			content.fadeOut(1000, closureIndicator);
+		}
+	}
+	
+	var indicatorFunction=function(targetContainer, contentSelector){
+		var content = $(targetContainer).find(contentSelector);
+		var isHidden = (content.css('display')=='none');
 
-var infoFunction=function(event){
-var content=$(this).find('.infoContainer');
-$('.explanationContainer').hide();
-$('.infoContainer').hide();
-content.toggle(1000);
-}
+		if (!isHidden) {
+			content.parent().find('.more').hide();
+			content.parent().find('.less').show();
+		} else {
+			content.parent().find('.more').show();
+			content.parent().find('.less').hide();
+		}
+	}
 
-features.click(featureFunction).append("<div class='more' style='position:absolute;bottom:0vw;right:0vw;color:gray;font-size:8pt;'>MORE/LESS</div>").css('cursor', 'pointer');
-infos.click(infoFunction).append("<div class='more' style='position:absolute;bottom:0vw;right:0vw;color:gray;font-size:8pt;'>MORE/LESS</div>").css('cursor', 'pointer');
+	var indicatorHtml="<div class='more' style='position:absolute;bottom:0vw;right:0vw;font-size:10pt;'>MORE</div><div class='less' style='position:absolute;bottom:0vw;right:0vw;font-size:10pt;'>LESS</div>";
+
+	var featureFunction = function(event) {
+		visibilityFunction(event, this, '.explanationContainer');
+	}
+	
+	var infoFunction = function(event) {
+		visibilityFunction(event, this, '.infoContainer');
+	}
+	
+	var featureIndicator=function(index, targetContainer){
+		indicatorFunction(targetContainer, '.explanationContainer')
+	}
+	
+	var infoIndicator=function(index, targetContainer){
+		indicatorFunction(targetContainer, '.infoContainer')
+	}
+
+	features.click(featureFunction)
+		.append(indicatorHtml)
+		.css('cursor', 'pointer')
+		.each(featureIndicator);
+	infos.click(infoFunction)
+		.append(indicatorHtml)
+		.css('cursor', 'pointer')
+		.each(infoIndicator);
 
 }
