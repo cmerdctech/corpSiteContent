@@ -34,3 +34,20 @@ color:gray;
 .less:hover{
 color:black;
 }
+
+.ie .infoContainer{
+overflow:hidden;
+}
+
+.ie .explanationContainer{
+overflow:hidden;
+}
+
+.ie .subtitle{
+z-index:0;
+font-size:1.5rem;
+}
+
+.ie .a_information{
+text-align:left;
+}
