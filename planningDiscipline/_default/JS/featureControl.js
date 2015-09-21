@@ -57,7 +57,7 @@
 			slickParms: {
 				arrows: true,
 				speed: 3000,
-				autoplay: false,
+				autoplay: true,
 				fade:false
 			}
 		});
@@ -92,9 +92,12 @@
 	});
 
 	var updateSlick = function(newSize) {
-		if (newSize.width < 750 && isSlick) {
+console.log("newSize.width="+newSize.width);
+
+
+		if (newSize.width < 1001 && isSlick) {
 			killSlick();
-		} else if (newSize.width > 749) {
+		} else if (newSize.width > 100) {
 			initSlick()
 		}
 	};

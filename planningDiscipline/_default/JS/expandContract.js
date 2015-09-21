@@ -105,7 +105,7 @@ var endExpandFunction = function() {
 
 var expandCollapse = function() {
 	var windowWidth = $(window).width();
-	if (windowWidth < 750) {
+	if (windowWidth < 1000) {
 		startExpandFunction();
 	} else {
 		endExpandFunction();
