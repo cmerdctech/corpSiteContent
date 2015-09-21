@@ -92,9 +92,6 @@ var initFeatures=function(){	scroller.on('init', function(event) {
 	});
 
 	var updateSlick = function(newSize) {
-		$('body').prepend("newSize.width=" + newSize.width);
-
-
 		if (newSize.width < 1001 && isSlick) {
 			killSlick();
 		} else if (newSize.width > 1000) {
