@@ -92,7 +92,7 @@
 	});
 
 	var updateSlick = function(newSize) {
-console.log("newSize.width="+newSize.width);
+$('body').prepend("newSize.width="+newSize.width);
 
 
 		if (newSize.width < 1001 && isSlick) {
