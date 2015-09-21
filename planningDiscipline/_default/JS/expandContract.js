@@ -1,3 +1,4 @@
+var waitForAnimationEnd=false;
 
 var startExpandFunction = function() {
 
@@ -19,28 +20,34 @@ var startExpandFunction = function() {
 	};
 
 	var visibilityFunction = function(event, target, contentSelector, hashPrefix) {
-
+		if (waitForAnimationEnd){
+			return;
+		}
+		waitForAnimationEnd=true; //don't run again until animations are finished
+		
 		var targetObj = $(target);
+		var targetId = targetObj.attr('id');
 		var content = targetObj.find(contentSelector);
 
 		var isHidden = (content.css('display') == 'none');
 
-		var closureIndicator = function(event) {
+		var afterAnimationFunction = function(event) {
 
 			scrollTopFunction(targetObj);
 
 			indicatorFunction($(this).parent(), contentSelector)
+			
+			waitForAnimationEnd=false; //accept clicks again
 		};
 
 		if (isHidden) {
 			$('.explanationContainer').hide(500);
 			$('.infoContainer').hide(500);
-			content.show(1000, closureIndicator);
+			content.show(1000, afterAnimationFunction);
 
 			window.location.hash = hashPrefix + targetId;
-
 		} else {
-			content.hide(1000, closureIndicator);
+			content.hide(1000, afterAnimationFunction);
 		}
 	};
 
