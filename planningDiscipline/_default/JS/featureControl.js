@@ -99,12 +99,13 @@
 		}
 	};
 	resizeFunctionList.push(updateSlick);
+	resizeFunctionList.push(expandCollapse);
 
 	updateSlick({
 		height: $(window).height(),
 		width: $(window).width()
 	});
-
+expandCollapse();
 
 })(jQuery);
 
