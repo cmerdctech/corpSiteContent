@@ -6,7 +6,7 @@ var startExpandFunction = function() {
 	var features = $('.featurePanel');
 	var infos = $('.infoPanel');
 
-	var scrollTopFunction = function(targetObj) {
+	var scrollTopFunction = function(targetObj, callback) {
 		var targetId = targetObj.attr('id');
 		var opaque = {
 			zoom: '1',
@@ -14,6 +14,8 @@ var startExpandFunction = function() {
 			opacity: '1',
 			scrollTop: targetObj.offset().top - 50
 		};
+		
+		callback=callback?callback:function(){};
 
 		$("html, body")
 			.animate(opaque, 1000, function() {});
@@ -41,8 +43,7 @@ var startExpandFunction = function() {
 		};
 
 		if (isHidden) {
-			$('.explanationContainer').hide(500);
-			$('.infoContainer').hide(500);
+			$('.narrowWindowDeleteIdClass').hide(500);
 			content.show(1000, afterAnimationFunction);
 
 			window.location.hash = hashPrefix + targetId;

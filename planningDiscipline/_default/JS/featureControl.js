@@ -3,7 +3,7 @@
 	var scroller = $('#scroll1Container'),
 		isSlick = false;
 
-	scroller.on('init', function(event) {
+var initFeatures=function(){	scroller.on('init', function(event) {
 		//'init' is a slick scroller event from feature panel
 		setTimeout(function() {
 			$('#info1Container').fidgets_control_vertical_structure({
@@ -11,6 +11,7 @@
 			});
 		}, 1000); //for some reason, the init event fires about a second before the size of the panel is adjusted
 	});
+	}
 
 	var initSlick = function() {
 		if (isSlick) {
@@ -20,16 +21,15 @@
 		scroller.fidgets_control_slick_carousel({
 			startup: [
 				{
-					selector:'.featureOverlay',
+					selector: '.featureOverlay',
 					pluginName: 'fidgets_control_feature_overlay',
 					parameters: {}
-				},
-				function(inx, panelItemList){
-					if (inx===0){
+				}, function(inx, panelItemList) {
+					if (inx === 0) {
 						$('.firstOne').fidgets_control_feature_overlay({
-						delay: 1000,
-						speed: 500
-					});
+							delay: 1000,
+							speed: 500
+						});
 
 
 					}
@@ -37,7 +37,7 @@
 			],
 			onShow: [
 				{
-					selector:'.featureOverlay',
+					selector: '.featureOverlay',
 					pluginName: 'fidgets_control_feature_overlay',
 					parameters: {
 						delay: 1000,
@@ -47,10 +47,10 @@
 			],
 			onHide: [
 				{
-					selector:'.featureOverlay',
+					selector: '.featureOverlay',
 					pluginName: 'fidgets_control_feature_overlay',
 					parameters: {
-						action:'hide'
+						action: 'hide'
 					}
 				}
 			],
@@ -58,7 +58,7 @@
 				arrows: true,
 				speed: 3000,
 				autoplay: true,
-				fade:false
+				fade: false
 			}
 		});
 
@@ -92,23 +92,27 @@
 	});
 
 	var updateSlick = function(newSize) {
-$('body').prepend("newSize.width="+newSize.width);
+		$('body').prepend("newSize.width=" + newSize.width);
 
 
 		if (newSize.width < 1001 && isSlick) {
 			killSlick();
-		} else if (newSize.width > 100) {
+		} else if (newSize.width > 1000) {
 			initSlick()
 		}
 	};
 	resizeFunctionList.push(updateSlick);
 	resizeFunctionList.push(expandCollapse);
 
+
+//run the init processes
+	initFeatures();
 	updateSlick({
 		height: $(window).height(),
 		width: $(window).width()
 	});
-expandCollapse();
+	expandCollapse();
 
 })(jQuery);
+
 
