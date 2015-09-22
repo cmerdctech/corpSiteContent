@@ -35,6 +35,13 @@ color:gray;
 color:black;
 }
 
+.slick-dots{
+bottom:-1rem;
+}
+.slick-dots li button::before{
+font-size:10pt;
+}
+
 .ie .infoContainer{
 overflow:hidden;
 }
