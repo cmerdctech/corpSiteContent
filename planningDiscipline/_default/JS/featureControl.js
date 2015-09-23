@@ -90,11 +90,20 @@ var initFeatures=function(){	scroller.on('init', function(event) {
 		}
 
 	});
+	
+	var restorePossiblyCollapsedItems=function(){
+		var collapsableItems=$('.narrowWindowDeleteIdClass').css('display', '-webkit-flex');
+	collapsableItems.css('display', '-webkit-flex');
+	if (collapsableItems.css('display')!='-webkit-flex'){
+		collapsableItems.css('display', 'flex');
+	}
+	};
 
 	var updateSlick = function(newSize) {
 		if (newSize.width < 1001 && isSlick) {
 			killSlick();
 		} else if (newSize.width > 1000) {
+			restorePossiblyCollapsedItems();
 			initSlick()
 		}
 	};
