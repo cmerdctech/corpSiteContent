@@ -3,14 +3,15 @@
 	var scroller = $('#scroll1Container'),
 		isSlick = false;
 
-var initFeatures=function(){	scroller.on('init', function(event) {
-		//'init' is a slick scroller event from feature panel
-		setTimeout(function() {
-			$('#info1Container').fidgets_control_vertical_structure({
-				defaultPanelId: 'introduction'
-			});
-		}, 1000); //for some reason, the init event fires about a second before the size of the panel is adjusted
-	});
+	var initFeatures = function() {
+		scroller.on('init', function(event) {
+			//'init' is a slick scroller event from feature panel
+			setTimeout(function() {
+				$('#info1Container').fidgets_control_vertical_structure({
+					defaultPanelId: 'introduction'
+				});
+			}, 1000); //for some reason, the init event fires about a second before the size of the panel is adjusted
+		});
 	}
 
 	var initSlick = function() {
@@ -73,10 +74,29 @@ var initFeatures=function(){	scroller.on('init', function(event) {
 		isSlick = false;
 	}
 
-	initSlick();
+	var updateSlick = function(newSize) {
+		if (newSize.width < 1001 && isSlick) {
+			killSlick();
+		} else if (newSize.width > 1000) {
+			restorePossiblyCollapsedItems();
+			initSlick()
+		}
+	};
 
+	var restorePossiblyCollapsedItems = function() {
+		var collapsableItems = $('.narrowWindowDeleteIdClass').css('display', '-webkit-flex');
+		collapsableItems.css('display', '-webkit-flex');
+		if (collapsableItems.css('display') != '-webkit-flex') {
+			collapsableItems.css('display', 'flex');
+		}
+	};
+
+
+	
+	//set up future responses
 	var resizeFunctionList = [];
-
+	resizeFunctionList.push(updateSlick);
+	resizeFunctionList.push(expandCollapse);
 	$(window).resize(function(event) {
 
 		var newSize = {
@@ -90,29 +110,10 @@ var initFeatures=function(){	scroller.on('init', function(event) {
 		}
 
 	});
-	
-	var restorePossiblyCollapsedItems=function(){
-		var collapsableItems=$('.narrowWindowDeleteIdClass').css('display', '-webkit-flex');
-	collapsableItems.css('display', '-webkit-flex');
-	if (collapsableItems.css('display')!='-webkit-flex'){
-		collapsableItems.css('display', 'flex');
-	}
-	};
 
-	var updateSlick = function(newSize) {
-		if (newSize.width < 1001 && isSlick) {
-			killSlick();
-		} else if (newSize.width > 1000) {
-			restorePossiblyCollapsedItems();
-			initSlick()
-		}
-	};
-	resizeFunctionList.push(updateSlick);
-	resizeFunctionList.push(expandCollapse);
-
-
-//run the init processes
+	//run the init processes
 	initFeatures();
+	initSlick();
 	updateSlick({
 		height: $(window).height(),
 		width: $(window).width()
@@ -120,5 +121,6 @@ var initFeatures=function(){	scroller.on('init', function(event) {
 	expandCollapse();
 
 })(jQuery);
+
 
 

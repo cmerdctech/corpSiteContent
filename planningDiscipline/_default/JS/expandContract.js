@@ -1,3 +1,4 @@
+var expandCollapse=(function ($){
 var waitForAnimationEnd=false;
 
 var startExpandFunction = function() {
@@ -112,3 +113,7 @@ var expandCollapse = function() {
 		endExpandFunction();
 	}
 };
+
+return expandCollapse;
+
+})(jQuery);
