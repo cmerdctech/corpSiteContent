@@ -75,9 +75,11 @@
 	}
 
 	var updateSlick = function(newSize) {
-		if (newSize.width < 1001 && isSlick) {
-			killSlick();
-		} else if (newSize.width > 1000) {
+		if (newSize.width < 1001) {
+			isSlick && killSlick();
+			$('.narrowWindowDeleteIdClass').css('display', 'none');
+		} 
+		else if (newSize.width > 1000) {
 			restorePossiblyCollapsedItems();
 			initSlick()
 		}
