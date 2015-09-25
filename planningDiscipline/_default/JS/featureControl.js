@@ -78,9 +78,11 @@
 		if (newSize.width < 1001) {
 			isSlick && killSlick();
 			$('.narrowWindowDeleteIdClass').css('display', 'none');
+			$('.explanationContainer').prop('title', '');
 		} 
 		else if (newSize.width > 1000) {
 			restorePossiblyCollapsedItems();
+			$('.explanationContainer').prop('title', 'CLICK TO START/STOP SLIDE SHOW ANIMATION');
 			initSlick()
 		}
 	};
