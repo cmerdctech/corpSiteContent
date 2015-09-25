@@ -10,7 +10,7 @@
 				$('#info1Container').fidgets_control_vertical_structure({
 					defaultPanelId: 'introduction'
 				});
-			}, 1000); //for some reason, the init event fires about a second before the size of the panel is adjusted
+			}, 999); //for some reason, the init event fires about a second before the size of the panel is adjusted
 		});
 	}
 
@@ -74,26 +74,32 @@
 		isSlick = false;
 	}
 
+	var displayBreakpoint=1000;
 	var updateSlick = function(newSize) {
-		if (newSize.width < 1001) {
+		if (newSize.width < displayBreakpoint+1) {
 			isSlick && killSlick();
-			$('.narrowWindowDeleteIdClass').css('display', 'none');
-			$('.explanationContainer').prop('title', '');
 		} 
-		else if (newSize.width > 1000) {
-			restorePossiblyCollapsedItems();
-			$('.explanationContainer').prop('title', 'CLICK TO START/STOP SLIDE SHOW ANIMATION');
+		else if (newSize.width > displayBreakpoint) {
 			initSlick()
 		}
 	};
+	
+	var tuneUpDisplay=function(){
+		if (newSize.width < displayBreakpoint+1) {
+			$('.narrowWindowDeleteIdClass').css('display', 'none');
+			$('.explanationContainer').prop('title', '');
+		} 
+		else if (newSize.width > displayBreakpoint) {
+			var collapsableItems = $('.narrowWindowDeleteIdClass').css('display', '-webkit-flex');
+			collapsableItems.css('display', '-webkit-flex');
+			if (collapsableItems.css('display') != '-webkit-flex') {
+				collapsableItems.css('display', 'flex');
+			}
+			$('.explanationContainer').prop('title', 'CLICK TO START/STOP SLIDE SHOW ANIMATION');
 
-	var restorePossiblyCollapsedItems = function() {
-		var collapsableItems = $('.narrowWindowDeleteIdClass').css('display', '-webkit-flex');
-		collapsableItems.css('display', '-webkit-flex');
-		if (collapsableItems.css('display') != '-webkit-flex') {
-			collapsableItems.css('display', 'flex');
 		}
-	};
+	}
+
 
 
 	
@@ -101,6 +107,8 @@
 	var resizeFunctionList = [];
 	resizeFunctionList.push(updateSlick);
 	resizeFunctionList.push(expandCollapse);
+	resizeFunctionList.push(tuneUpDisplay);
+	
 	$(window).resize(function(event) {
 
 		var newSize = {
