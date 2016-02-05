@@ -1,0 +1,37 @@
+/*
+
+Remember, 'featurePanel also refers to files in _mediaQueries.
+
+*/
+
+#scroll1NavContainer{
+position:relative;
+}
+
+.slick-prev{
+	left:1%;
+	top:90%;
+}
+.slick-next{
+	right:1%;
+	top:90%;
+}
+
+.slick-slider{
+margin-bottom:0px;
+}
+
+
+.scroll1 img{
+	height:100%;
+	width:100%;
+}
+
+.scroll1 .headTitle{
+	position:absolute;
+	top:10%;
+	left:10%;
+	font-size:200%;
+	font-weight:bold;
+	color:pink;
+}

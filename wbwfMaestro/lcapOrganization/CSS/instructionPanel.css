@@ -1,0 +1,62 @@
+.instructionPanel{
+
+	margin-top:-20vh;
+	
+	min-height:10rem;
+	min-width:30rem;
+	max-width:50vw;
+	
+	padding: 2% 0 0 2%;
+
+	display:none;
+	background:white;
+	border:1pt solid gray;
+	border-bottom: 1pt solid gray;
+	box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.33);
+}
+
+.instructionPanel .title{
+font-weight:bold;
+font-size:110%;
+}
+
+.instructionPanel .newMenu{
+color:gray;
+font-size:105%;
+margin:1rem;
+}
+
+.instructionPanel .newMenu::after{
+content: ' (v3.1+)';
+color:black;
+font-size:80%;
+}
+
+.instructionPanel .oldMenu{
+font-size:90%;
+}
+
+.instructionPanel .oldMenu::after{
+content: ' (previous versions)';
+color:black;
+font-size:80%;
+}
+
+.instructionPanel .notes{
+padding-top:1rem;
+border-top:1pt solid gray;
+margin-top:1rem;
+font-size:90%;
+margin:1rem 0rem;
+}
+
+nav{
+font-style:italic;
+margin-left:1rem;
+}
+
+norm{
+font-weight:normal;
+display:inline;
+font-size:90%;
+}

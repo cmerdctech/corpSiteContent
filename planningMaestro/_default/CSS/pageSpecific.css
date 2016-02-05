@@ -1,0 +1,73 @@
+
+.slick-prev::before, .slick-next::before{
+color:black;
+}
+
+.slick-next:hover{
+color:white;
+background:#ddd;
+}
+.slick-prev:hover{
+color:white;
+background:#ddd;
+}
+
+.example .title{
+color:#b800a1;
+text-align:center;
+}
+
+.infoBgcolorBlue{
+background:rgb(227, 237, 251);
+}
+
+.more{
+color:gray;
+}
+.more:hover{
+color:black;
+}
+
+.less{
+color:gray;
+}
+.less:hover{
+color:black;
+}
+
+.slick-dots{
+bottom:-1rem;
+}
+.slick-dots li button::before{
+font-size:10pt;
+}
+
+.ie .infoContainer{
+overflow:hidden;
+}
+
+.ie .explanationContainer{
+overflow:hidden;
+}
+
+.ie .subtitle{
+z-index:0;
+font-size:1.5rem;
+}
+
+.ie .zA_information{
+padding-right:41vw;
+}
+
+.ie .a_conclusion{
+
+margin-top:-11vh;
+}
+
+.ie #getStartedNow .information{
+text-align:left;
+}
+
+.ie #enterDataEasily .information{
+text-align:left;
+}

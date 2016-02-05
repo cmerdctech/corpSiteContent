@@ -1,0 +1,44 @@
+.contactButtonSuperGlobalCssFileIndicator{color:black;} /*this is here to show which file in browser debug*/
+
+
+/*
+.contactButton{
+	background:url(../images/requestContactReady.png);
+	height:45px;
+	width:90px;
+	cursor:pointer;
+}
+
+.contactButton:hover{
+	background:url(../images/requestContactHover.png);
+}
+
+
+.contactPanel{
+
+	
+	padding:20px;
+	font-weight:bold;
+	
+	background:white;
+
+}
+*/
+
+.contactPanel .header{
+min-height:30px;text-align:center;border-bottom:1pt solid gray;padding-bottom:10px;margin-bottom:10px;
+}
+
+.contactPanel .header .subTitle{
+	font-size:80%;
+	font-weight:normal;
+	margin:3px 0px 0px 0px;
+}
+
+.contactPanel td{
+	padding:10px 10px 2px 0px;
+}
+
+.contactFormTable{
+margin:30px  0px 0px 0px;
+}

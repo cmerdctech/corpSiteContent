@@ -1,0 +1,13 @@
+.siteSpecificCssFileIndicator{color:black;} /*this is here to show which file in browser debug*/
+
+.top-bar{
+background:transparent;
+}
+
+.top-bar-section{
+	zoom: 1;
+	filter: alpha(opacity=50);
+	opacity: 0.7;
+
+}
+

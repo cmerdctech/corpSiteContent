@@ -1,0 +1,46 @@
+<?php
+
+if (APPLICATION_ENV=='production' && isset($this->contentArray['analytics.js']) && $this->contentArray['analytics.js']){
+	$analyticsString="<script type='text/javascript'>{$this->contentArray['analytics.js']}</script>";
+}
+else{
+	$analyticsString='';
+}
+
+$headStyle=$this->headStyle();
+$route=Zend_Controller_Front::getInstance()->getRouter()->getCurrentRoute()->getDefaults();
+
+$title=$this->headTitle();
+if (isset($route['title'])){
+	$title="<TITLE>{$route['title']}</TITLE>";
+}
+
+$javascript=$this->headScript();
+$contentArray=$this->contentArray;
+$viewContent=$this->layout()->content;
+
+echo "<!doctype html>
+<html class='no-js' lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    $title
+    <link rel='stylesheet' href='css/foundation.css' />
+    <script src='js/vendor/modernizr.js'></script>
+  </head>
+  <body>   
+  
+$viewContent
+
+<!-- ================================================== -->    
+    <script src='js/vendor/jquery.js'></script>
+    <script src='js/foundation.min.js'></script>
+    <script>
+      $(document).foundation();
+	$(document).ready(function(){
+		$('body').append('<p style=\'margin-top:30px;\'>Thanks for visiting!');
+	});
+    </script>
+  </body>
+</html>
+";

@@ -1,0 +1,52 @@
+
+.responsiveButton{
+	color:#297FFF;
+	background:#f2f2f2;
+  	font-weight:bold;
+	cursor:pointer;
+  	
+	text-align:center;
+	
+	padding:.5vw 1vw;
+	
+	margin:1vw;
+	
+	border-top-width:.2em;
+	border-right-width:.2em;
+	border-bottom-width:.2em;
+	border-left-width:.2em;
+	
+	border-top-color:#444;
+	border-right-color:#444;
+	border-bottom-color:#444;
+	border-left-color:#444;
+	
+	border-top-style:solid;
+	border-right-style:solid;
+	border-bottom-style:solid;
+	border-left-style:solid;
+	
+	display:block;
+	
+	
+	border-radius: 6px; /* CSS3 */
+	/*box-shadow:2px 3px 15px 12px rgba(0, 0, 0, .5);  CSS3 */
+	box-shadow:none; /* CSS3 */
+
+}
+
+
+.responsiveButton:hover{
+	background:#f2f2f2;
+	color:#666;
+/*outline:3pt solid rgba(255,255,255,.7);*/
+	border-radius: 1em; /* CSS3 */
+}
+
+
+
+.buttonAnnotation{
+font-size:70%;
+margin-bottom:-18px;
+font-weight:normal;
+}
