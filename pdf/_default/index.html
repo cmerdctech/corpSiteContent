@@ -16,7 +16,7 @@
 		body {
 			color:#4B92D1;
 			font-family:sans-serif;
-			padding:20vh 20vw;
+			padding:3vh 10vw;
 		}
 		
 		.entryForm{
@@ -86,19 +86,40 @@ color:#9df;
 .error{
 	color:#c84;
 }
+
+.instructions{
+	font-size:14pt;
+	wdith:50vw;
+}
+
+.instructions a{
+	text-decoration:underline;
+}
 	--></style>
 	
 </head>
 <body>
 
+	<div class='instructions'>
+	This is a demonstration of the function of inserting a watermark into an 
+	existing PDF. There are two PDFs available for the demo,
+	<a href='/media/tmpPlans/libPdf/justHello.pdf'>justHello</a> and
+	<a href='/media/tmpPlans/libPdf/WorkEnvironmentPreferences.pdf'>WorkEnvironmentPreferences</a>. 
+	If you click on either of those you will see that they are not personalized.<br><br>
+	To enjoy the demonstration, choose a source PDF and then enter something into
+	the watermark field. (In production, this would probably be a student name and date.)<br><BR>
+	When you click 'Create Watermarked PDF', the system will present you with a link
+	to a PDF. Click it and you will see your watermark text in red. Have fun.
+	</div>
+
 	<div class='entryForm '>
 		<div>Choose a Source PDF</div>
-			<select id='templateSelect' name='template' style='margin:20px 0px;'>
+			<select id='templateSelect' name='template' style='margin:5px 0px 20px 0px;'>
 			<option value=''>--</option>
 				<option value="WorkEnvironmentPreferences.pdf">WorkEnvironmentPreferences</option>
 				<option value="justHello.pdf">justHello</option>
 			</select>
-		<div>Enter text to imprint</div>
+		<div style='margin-bottom:5px;'>Enter text to imprint</div>
 		<div>Watermark: <input type='text' name='watermark' style='width:300px;'> (Student Name)</div>
 		<div id='saveButton' class='round'>Create Watermarked PDF</div>
 	</div>
@@ -155,7 +176,7 @@ color:#9df;
 		});
 		}
 		
-		$('#saveButton').on('click', createFunction);
+		$('#saveButton').click('click', createFunction);
 
 	
 	
