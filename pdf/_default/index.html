@@ -1,0 +1,166 @@
+<?/*php require_once($_SERVER['DOCUMENT_ROOT'].'/tools/mailNotificationInclude.php');*/?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<META HTTP-EQUIV='Content-Type' CONTENT='text/html; charset=UTF-8'>
+	
+	<!-- META http-equiv="refresh" content="5;URL=http://somewhere.com" -->
+	
+	<title>Template Page Title</title>
+	
+	<script type='text/javascript' src='http://code.jquery.com/jquery-2.1.4.js'></script>
+	<!--link rel='stylesheet' type='text/css' href='css/main.css' /-->
+	
+	<style type='text/css'><!--
+	
+		body {
+			color:#4B92D1;
+			font-family:sans-serif;
+			padding:20vh 20vw;
+		}
+		
+		.entryForm{
+			margin:50px 0px;
+			font-size:20pt;
+		}
+		
+		.round{
+		
+		/* round corners */
+border-color:rgba(200,200,200, .5);
+
+border-top-width:.2rem;
+border-right-width:.2rem;
+border-bottom-width:.2rem;
+border-left-width:.2rem;
+
+border-top-color:rgba(200,200,200, .5);
+border-right-color:rgba(200,200,200, .5);
+border-bottom-color:rgba(200,200,200, .5);
+border-left-color:rgba(200,200,200, .5);
+
+border-top-style:solid;
+border-right-style:solid;
+border-bottom-style:solid;
+border-left-style:solid;
+
+
+
+-webkit-border-radius: 1rem;
+-moz-border-radius: 1rem;
+border-radius: 1rem;
+}
+		
+		#saveButton{
+
+width:200px;
+margin:30px;
+text-align:center;
+cursor:pointer;
+}
+
+#saveButton:hover{
+background:#9df;
+}
+
+.pdfLink {
+  color: black;
+  font-size: 14pt;
+  font-weight: bold;
+  margin: 30px 0;
+  padding: 10px;
+  text-align: center;
+  width: 300px;
+}
+
+.pdfLink a{
+color:black;
+font-weight:bold;
+font-size:14pt;
+margin:30px 0px;
+}
+.pdfLink a:hover{
+color:#9df;
+}
+
+.error{
+	color:#c84;
+}
+	--></style>
+	
+</head>
+<body>
+
+	<div class='entryForm '>
+		<div>Choose a Source PDF</div>
+			<select id='templateSelect' name='template' style='margin:20px 0px;'>
+			<option value=''>--</option>
+				<option value="WorkEnvironmentPreferences.pdf">WorkEnvironmentPreferences</option>
+				<option value="justHello.pdf">justHello</option>
+			</select>
+		<div>Enter text to imprint</div>
+		<div>Watermark: <input type='text' name='watermark' style='width:300px;'> (Student Name)</div>
+		<div id='saveButton' class='round'>Create Watermarked PDF</div>
+	</div>
+	
+</body>
+
+<script type='text/javascript'>
+	/* <![CDATA[ */
+	$(document).ready(function(){
+	var createFunction=function(){
+			var url="/pdfservice/watermark";
+			var templateName=$( "#templateSelect option:selected" ).val();
+			if (!templateName){
+				$('.entryForm').prepend("<div class='error'>You have to enter a template</div>");
+				return;
+			}
+			var watermarkText=$('input')[0].value;
+			if (!watermarkText){
+				$('.entryForm').prepend("<div class='error'>You have to enter a watermark</div>");
+				return;
+			}
+		var sendObj={
+			watermark:{
+				text:watermarkText
+			},
+			fileNameSuggestion:watermarkText.replace(/\W/g, ''),
+			templateFileName:templateName,
+			authorization:{
+				token:'coming soon'
+			}
+		};
+
+
+
+		$.ajax({
+				method: "POST",
+				url: url,
+				data: sendObj,
+				headers: {
+					authorization: 'prevToken.authorizedDomain'+" "+'prevToken.authToken'
+				}
+			})
+			.done(function(result) {
+				result=JSON.parse(result);
+				$('body').append("<div class='pdfLink round'><a href='"+result.uri+"'>Click HERE for PDF</a></div>");
+				$('body').append("<div style='font-size:24px;'>"+JSON.stringify(result)+"</div>");
+
+
+			})
+			.fail(function(data, textStatus) {
+			var errorString = "Server Error: " + data.status + " - " + data.statusText + " (" + data.responseText + ")";
+
+			$('body').html(errorString);
+		});
+		}
+		
+		$('#saveButton').on('click', createFunction);
+
+	
+	
+	});
+	/* ]]> */
+</script>
+
+</html>
