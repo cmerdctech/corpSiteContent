@@ -212,10 +212,6 @@ color:#9df;
 			
 			$.ajax(requestObj)
 				.done(function(result) {
-				
-					console.dir({
-						"result": result
-					});
 
 					$('#resultContainer').prepend("<div class='error' style='font-size:24px;margin-bottom:15px;'>" + JSON.stringify(result) + "</div>");
 
