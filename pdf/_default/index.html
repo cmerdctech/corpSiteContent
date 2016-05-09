@@ -108,77 +108,113 @@ color:#9df;
 	If you click on either of those you will see that they are not personalized.<br><br>
 	To enjoy the demonstration, choose a source PDF and then enter something into
 	the watermark field. (In production, this would probably be a student name and date.)<br><BR>
-	When you click 'Create Watermarked PDF', the system will present you with a link
-	to a PDF. Click it and you will see your watermark text in red. Have fun.
+	When you click 'Create Imprinted PDF', the system will present you with a link
+	to a PDF. Click it and you will see your imprint on the first page in red. Have fun.
 	</div>
 
 	<div class='entryForm '>
 		<div>Choose a Source PDF</div>
-			<select id='templateSelect' name='template' style='margin:5px 0px 20px 0px;'>
+			<select id='templateSelect' name='template' style='margin:5px 0px 20px 0px;width:500px;height:60px;padding-left:20px;'>
 			<option value=''>--</option>
-				<option value="WorkEnvironmentPreferences.pdf">WorkEnvironmentPreferences</option>
+				<option  value="WorkEnvironmentPreferences.pdf">WorkEnvironmentPreferences</option>
 				<option value="justHello.pdf">justHello</option>
 			</select>
 		<div style='margin-bottom:5px;'>Enter text to imprint</div>
-		<div>Watermark: <input type='text' name='watermark' style='width:300px;'> (Student Name)</div>
-		<div id='saveButton' class='round'>Create Watermarked PDF</div>
+		<div><input value='' type='text' name='watermark' style='width:300px;'></div>
+		<div id='saveButton' class='round'>Create Imprinted PDF</div>
+		<div id='error' style='margin-bottom:10px;'></div>
+		<input checked type='radio' name='proxySwitch' value='true'> use proxy | <input type='radio' name='proxySwitch' value='false'> go direct<br><br>
+
 	</div>
+	<div id='resultContainer'></div>
 	
 </body>
 
 <script type='text/javascript'>
 	/* <![CDATA[ */
 	$(document).ready(function(){
-	var createFunction=function(){
-			var url="/pdfservice/watermark";
-			var templateName=$( "#templateSelect option:selected" ).val();
-			if (!templateName){
-				$('.entryForm').prepend("<div class='error'>You have to enter a template</div>");
+	
+	
+		var createFunction = function() {
+			var url = "http://pdf.planningmaestro.local/pdfservice/watermark";
+			var templateName = $("#templateSelect option:selected").val();
+			if (!templateName) {
+				$('#error').prepend("<div class='error'>You have to select a template</div>");
 				return;
 			}
-			var watermarkText=$('input')[0].value;
-			if (!watermarkText){
-				$('.entryForm').prepend("<div class='error'>You have to enter a watermark</div>");
+			var watermarkText = $('input')[0].value;
+			if (!watermarkText) {
+				$('#error').prepend("<div class='error'>You have to enter imprint text</div>");
 				return;
 			}
-		var sendObj={
-			watermark:{
-				text:watermarkText
-			},
-			fileNameSuggestion:watermarkText.replace(/\W/g, ''),
-			templateFileName:templateName,
-			authorization:{
-				token:'coming soon'
-			}
-		};
-
-
-
-		$.ajax({
+			var sendObj = {
+				watermark: {
+					text: watermarkText
+				},
+				fileNameSuggestion: watermarkText.replace(/\W/g, ''),
+				templateFileName: templateName,
+				authorization: {
+					token: 'coming soon'
+				}
+			};
+			var originalRequestObj = {
 				method: "POST",
 				url: url,
 				data: sendObj,
 				headers: {
-					authorization: 'prevToken.authorizedDomain'+" "+'prevToken.authToken'
+					authorization: 'prevToken.authorizedDomain' + " " + 'prevToken.authToken'
+				},
+				json: true
+			};
+
+			var modernRequestObj = {
+				crossDomain: true,
+				dataType: 'jsonp',
+
+
+				url: "http://dashmaster.local:5020/proxy",
+				data: {
+					url: url,
+					method: 'get',
+					body: sendObj
+				},
+				headers: {
+					authorization: "<!userId!> <!authToken!>"
 				}
-			})
-			.done(function(result) {
-				result=JSON.parse(result);
-				$('body').append("<div class='pdfLink round'><a href='"+result.uri+"'>Click HERE for PDF</a></div>");
-				$('body').append("<div style='font-size:24px;'>"+JSON.stringify(result)+"</div>");
+			};
 
+			var proxySwitch = $("input[name=proxySwitch]:checked").val();
+			if (proxySwitch == 'true') {
+				var requestObj = modernRequestObj;
+			} else {
+				var requestObj = originalRequestObj;
+			}
+			
+			$.ajax(requestObj)
+				.done(function(result) {
+				
+					console.dir({
+						"result": result
+					});
 
-			})
-			.fail(function(data, textStatus) {
-			var errorString = "Server Error: " + data.status + " - " + data.statusText + " (" + data.responseText + ")";
+					$('#resultContainer').prepend("<div class='error' style='font-size:24px;margin-bottom:15px;'>" + JSON.stringify(result) + "</div>");
 
-			$('body').html(errorString);
-		});
+					if (result.status!==0){
+					$('#resultContainer').prepend("<div class='pdfLink round'><a href='" + result.uri + "'>Click HERE for PDF</a></div>");
+					}
+
+				})
+				.fail(function(data, textStatus) {
+				var errorString = "Server Error: " + data.status + " - " + data.statusText + " (" + data.responseText + ")";
+
+				$('#error').html(errorString);
+			});
 		}
-		
+
 		$('#saveButton').click('click', createFunction);
 
-	
+
+
 	
 	});
 	/* ]]> */
