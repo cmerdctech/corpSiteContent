@@ -124,7 +124,7 @@ color:#9df;
 		<div id='saveButton' class='round'>Create Imprinted PDF</div>
 		<div id='error' style='margin-bottom:10px;'></div>
 		<input checked type='radio' name='proxySwitch' value='true'> use proxy | <input type='radio' name='proxySwitch' value='false'> go direct<br><br>
-		<div>Force Demo Proxy <input type='checkbox' name='forceDemoSystem' value='true'></div>
+		<div id='forceDemoContainer'>Force Demo Proxy <input type='checkbox' name='forceDemoSystem' value='true'></div>
 	</div>
 	<div id='resultContainer'></div>
 	
@@ -134,7 +134,12 @@ color:#9df;
 	/* <![CDATA[ */
 	$(document).ready(function(){
 	
-	
+			var isLocal=window.location.href.match(/local/);
+			
+			if (!isLocal){
+				$("#forceDemoContainer").css('display', 'none');
+			}
+			
 		var createFunction = function() {
 			var templateName = $("#templateSelect option:selected").val();
 			if (!templateName) {
@@ -163,18 +168,14 @@ color:#9df;
 			var demoProxyUrl='http://demobox.planningmaestro.org/proxy';
 			var devProxyUrl='http://dashmaster.local:5020/proxy';
 			
-			var isLocal=window.location.href.match(/local/);
 			var proxyUrl=isLocal?devProxyUrl:demoProxyUrl;
 			var serviceUrl=isLocal?devServiceUrl:demoServiceUrl;
 
-			if (isLocal){
+
 			var forceDemoSystem = $("input[name=forceDemoSystem]:checked").val();
 			proxyUrl=forceDemoSystem?demoProxyUrl:proxyUrl;
 			serviceUrl=forceDemoSystem?demoServiceUrl:serviceUrl;
-			}
-			else{
-				$("input[name=forceDemoSystem]").css('display', 'none');
-			}
+
 			
 console.log("serviceUrl="+serviceUrl);
 console.log("proxyUrl="+proxyUrl);
