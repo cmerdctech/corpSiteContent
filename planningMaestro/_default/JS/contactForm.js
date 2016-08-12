@@ -5,7 +5,6 @@
 // 	});
 // });
 
-console.log('helllo');
 $('.infusionsoftButtonIdClass').click(function(event){
 
 var infusionWindow=window.open('', 'infusionWindow', "height=516,width=486,modal=yes,alwaysRaised=yes");
