@@ -4,7 +4,8 @@
 Icon?
 ._Icon\r
 /tmp/*
-
+technology/_SUBSITES/video/.ssh/*
+technology/_SUBSITES/expressbook/.ssh/*
 /configs/*
 */configs/*
 /config/*
