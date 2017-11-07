@@ -4,5 +4,6 @@ $(document).ready(function(){
 				event:event,
 				parameterFileName:'contactForms.ini'
 			});
+			setTimeout(function(){ $.scrollTo('.contactPanel');}, 1);
 		});
 	}); 
